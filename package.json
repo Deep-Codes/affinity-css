@@ -1,0 +1,25 @@
+{
+  "name": "affinity-css",
+  "version": "1.0.0",
+  "description": "Minimal CSS Framework based on Affinity Design System",
+  "main": "index.sass",
+  "repository": "https://github.com/Deep-Codes/affinity-css-dev",
+  "author": "Deepankar Bhade",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf && yarn build-sass",
+    "build-sass": "node-sass --output-style expanded src/index.sass ./css/index.css  && yarn  build-autoprefix",
+    "build-autoprefix": "postcss --use autoprefixer --map --output ./css/index.css ./css/index.css && yarn  build-cleancss",
+    "build-cleancss": "cleancss -o ./css/index.min.css ./css/index.css"
+  },
+  "files": [
+    "css"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "clean-css-cli": "^5.2.1",
+    "node-sass": "^5.0.0",
+    "postcss": "^8.2.7",
+    "postcss-cli": "^8.3.1"
+  }
+}

@@ -1,0 +1,25 @@
+.page {
+  max-width: 760px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+.code-lang-badge {
+  font-size: 12px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 5px 5px;
+  border: 1px solid grey;
+  border-radius: 5px 5px 0px 5px;
+}
+
+@media screen and (max-width: 760px) {
+  .page {
+    padding: 0px 10px;
+  }
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

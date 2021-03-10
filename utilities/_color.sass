@@ -1,0 +1,7 @@
+@import '../colors/tailwind'
+
+@each $name, $hex in $colors
+  .#{$name}
+    color: $hex
+  .bg-#{$name}
+    background-color: $hex
