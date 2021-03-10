@@ -7,11 +7,13 @@
   "author": "Deepankar Bhade",
   "license": "MIT",
   "scripts": {
+    "build-dev": "node-sass --output-style expanded src/index.sass ./docs/styles/index.css",
     "build": "rm -rf && yarn build-sass",
     "build-sass": "node-sass --output-style expanded src/index.sass ./css/index.css  && yarn  build-autoprefix",
     "build-autoprefix": "postcss --use autoprefixer --map --output ./css/index.css ./css/index.css && yarn  build-cleancss",
     "build-cleancss": "cleancss -o ./css/index.min.css ./css/index.css",
     "server": "snowpack dev",
+    "dev": "yarn build-dev && yarn server",
     "build-docs": "snowpack build"
   },
   "files": [

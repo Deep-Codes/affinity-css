@@ -6,6 +6,11 @@ module.exports = {
   mount: {
     docs: '/',
   },
+  optimize: {
+    bundle: true,
+    minify: true,
+    target: 'es2017',
+  },
   // routes: [{ match: 'routes', src: '.*', dest: '/docs' }],
   plugins: ['@marlonmarcello/snowpack-plugin-pug'],
   packageOptions: {
