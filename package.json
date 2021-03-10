@@ -14,7 +14,8 @@
     "build-cleancss": "cleancss -o ./css/index.min.css ./css/index.css",
     "server": "snowpack dev",
     "dev": "yarn build-dev && yarn server",
-    "build-docs": "snowpack build"
+    "build-docs": "snowpack build",
+    "publish-docs": "gh-pages -d build"
   },
   "files": [
     "css"
@@ -23,6 +24,7 @@
     "@marlonmarcello/snowpack-plugin-pug": "^1.0.3",
     "autoprefixer": "^10.2.5",
     "clean-css-cli": "^5.2.1",
+    "gh-pages": "^3.1.0",
     "jstransformer-marked": "^1.0.3",
     "node-sass": "^5.0.0",
     "postcss": "^8.2.8",

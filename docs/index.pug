@@ -9,84 +9,9 @@ html(lang='en')
 		link(rel='stylesheet' href='./styles/app.css')
 		link(rel='stylesheet' href='./styles/prism.css')
 	body.page
-		nav.pt-10.pb-10
-			h2 affinity.css
-			img#theme-icon(height='24' onclick='switchTheme()' src='./assets/light.svg' alt='')
-		h3.header.violet-6 Header
-		br
-		h1 The Best of Both Worlds
-		h2 The Best of Both Worlds
-		h3 The Best of Both Worlds
-		h4 The Best of Both Worlds
-		h5 The Best of Both Worlds
-		h6 The Best of Both Worlds
-		h1 nice
-		br
-		:marked
-			```html
-			<h1>The Best of Both Worlds</h1>
-			<h2>The Best of Both Worlds</h2>
-			<h3>The Best of Both Worlds</h3>
-			<h4>The Best of Both Worlds</h4>
-			<h5>The Best of Both Worlds</h5>
-			<h6>The Best of Both Worlds</h6>
-			```
-		pre.language-html
-			.code-lang-badge html
-			code.language-html
-				xmp
-					h1 The Best of Both Worlds
-					h2 The Best of Both Worlds
-					h3 The Best of Both Worlds
-					h4 The Best of Both Worlds
-					h5 The Best of Both Worlds
-					h6 The Best of Both Worlds
-		hr
-		br
-		pre.language-js
-			.code-lang-badge javascript
-			code.language-js
-				| const fs = require('fs');
-				| const data = fs.readFileSync('./colors/_palette.scss', 'utf-8');
-				| const arr = data.split('\n');
-				| let newArr = [];
-				| arr.forEa
-				| ((el) => {
-				| const indexSt = el.indexOf('-');
-				| const indexEnd = el.indexOf(':');
-				| let temp = el.slice(indexSt + 1, indexEnd);
-				| if (indexSt >= 0) {
-				| let num = +el.slice(indexSt + 1, indexEnd);
-				| if (num === 50) {
-				| num = '';
-				| } else {
-				| num = num / 100;
-				| }
-				| // console.log(num);
-				| let newStr = el.replace(temp, num.toString());
-				| newStr.replaceAll('"', '');
-				| newArr.push(newStr.slice(0, -1));
-				| }
-				| });
-				| fs.writeFileSync('./colors/_tailwind.scss', JSON.stringify(newArr));
-		table.table
-			thead
-				tr
-					th Firstname
-					th Lastname
-					th Email
-			tbody
-				tr
-					td John
-					td Doe
-					td john@example.com
-				tr
-					td Mary
-					td Moe
-					td mary@example.com
-				tr
-					td July
-					td Dooley
-					td july@example.com
+		include templates/navbar
+		include templates/element-list
+		include container
+
 	script(src='./js/app.js')
 	script(src='./js/prism.js')
