@@ -1,11 +1,14 @@
 .mt-10.mb-10
   h3#text.cyan-4 # Texts
   p This is Paragraph with #[span Span Text] , #[b Bold Text] , #[small Small Text]
-  :marked
-    ```html
-    <p>This is Paragraph with 
-      <span>Span Text</span> , 
-      <b>Bold Text</b> ,
-      <small>Small Text</small>
-    </p> 
-    ```
+  details 
+    summary See Code 
+    .mt-5.mb-5 
+      :marked
+        ```html
+        <p>This is Paragraph with 
+          <span>Span Text</span> , 
+          <b>Bold Text</b> ,
+          <small>Small Text</small>
+        </p> 
+        ```
