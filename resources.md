@@ -14,3 +14,4 @@
 - [Building Your CSS Framwork](https://geekyants.com/blog/building-your-own-css-framework-373)
 - [Utility Class with SASS Maps](https://frontstuff.io/generate-all-your-utility-classes-with-sass-maps)
 - [Dark Mode with CSS & SASS Variable](https://medium.com/swlh/dark-mode-using-css-variables-cf065a7fa133)
+- [Ripple Effect in Buttons](https://css-tricks.com/how-to-recreate-the-ripple-effect-of-material-design-buttons/)

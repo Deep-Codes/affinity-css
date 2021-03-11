@@ -3331,3 +3331,131 @@ table td:nth-child(1) {
   background-color: #ff84c2;
   border: 1px solid #b7005c;
 }
+
+:root[data-theme='theme-light'] {
+  --accents_1: #fafafa;
+  --accents_2: #eaeaea;
+  --accents_3: #999;
+  --accents_4: #888;
+  --accents_5: #666;
+  --accents_6: #444;
+  --accents_7: #333;
+  --accents_8: #111;
+  --background: #fff;
+  --foreground: #000;
+  --selection: #79ffe1;
+  --secondary: #666;
+  --code: #f81ce5;
+  --border: #eaeaea;
+  --error: #e00;
+  --errorLight: #ff1a1a;
+  --errorLighter: #f7d4d6;
+  --errorDark: #c50000;
+  --success: #0070f3;
+  --successLight: #3291ff;
+  --successLighter: #d3e5ff;
+  --successDark: #0761d1;
+  --warning: #f5a623;
+  --warningLight: #f7b955;
+  --warningLighter: #ffefcf;
+  --warningDark: #ab570a;
+  --cyan: #50e3c2;
+  --cyanLighter: #aaffec;
+  --cyanLight: #79ffe1;
+  --cyanDark: #29bc9b;
+  --violet: #7928ca;
+  --violetLighter: #e3d7fc;
+  --violetLight: #8a63d2;
+  --violetDark: #4c2889;
+  --purple: #f81ce5;
+  --alert: #ff0080;
+  --magenta: #eb367f;
+  --link: #0070f3;
+}
+
+:root[data-theme='theme-dark'] {
+  --accents_1: #111;
+  --accents_2: #333;
+  --accents_3: #444;
+  --accents_4: #666;
+  --accents_5: #888;
+  --accents_6: #999;
+  --accents_7: #eaeaea;
+  --accents_8: #fafafa;
+  --background: #000;
+  --foreground: #fff;
+  --selection: #f81ce5;
+  --secondary: #888;
+  --code: #79ffe1;
+  --border: #333;
+  --error: #e00;
+  --errorLighter: #f7d4d6;
+  --errorLight: #ff1a1a;
+  --errorDark: #c50000;
+  --success: #0070f3;
+  --successLighter: #d3e5ff;
+  --successLight: #3291ff;
+  --successDark: #0761d1;
+  --warning: #f5a623;
+  --warningLighter: #ffefcf;
+  --warningLight: #f7b955;
+  --warningDark: #ab570a;
+  --cyan: #50e3c2;
+  --cyanLighter: #aaffec;
+  --cyanLight: #79ffe1;
+  --cyanDark: #29bc9b;
+  --violet: #7928ca;
+  --violetLighter: #e3d7fc;
+  --violetLight: #8a63d2;
+  --violetDark: #4c2889;
+  --purple: #f81ce5;
+  --alert: #ff0080;
+  --magenta: #eb367f;
+  --link: #3291ff;
+}
+
+button {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0px 1.375rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  min-width: 12.5rem;
+  width: auto;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 0.875rem;
+  user-select: none;
+  outline: none;
+  -webkit-box-pack: center;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  transition: background 0.8s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  pointer-events: auto;
+  box-shadow: none;
+  background-position: center;
+  color: var(--accents_5);
+  background-color: var(--background);
+  border: 1px solid var(--accents_2);
+}
+
+button:hover, button:focus {
+  background: var(--accents_1) radial-gradient(circle, transparent 1%, var(--accents_1) 1%) center/15000%;
+  color: var(--foreground);
+  background-color: var(--background);
+  border-color: var(--foreground);
+  cursor: pointer;
+  pointer-events: auto;
+  box-shadow: none;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+button:active {
+  background-color: var(--accents_2);
+  background-size: 100%;
+  transition: background 0s;
+}
