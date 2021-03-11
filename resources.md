@@ -15,3 +15,4 @@
 - [Utility Class with SASS Maps](https://frontstuff.io/generate-all-your-utility-classes-with-sass-maps)
 - [Dark Mode with CSS & SASS Variable](https://medium.com/swlh/dark-mode-using-css-variables-cf065a7fa133)
 - [Ripple Effect in Buttons](https://css-tricks.com/how-to-recreate-the-ripple-effect-of-material-design-buttons/)
+- [Magic of SASS and CSS Variables](https://codeburst.io/magic-of-css-sass-variables-b07ae8c1b775)

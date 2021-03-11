@@ -1,16 +1,28 @@
 @import '../helpers/layout',  '../helpers/palette'
 
-// Only works on light or Dark
-// as sass variable are not dynamic
-@mixin ghost($color,$back)
-  background: $back
+$success: var(--success)
+$warning: var(--warning)
+$danger: var(--error)
+$foreground: var(--foreground)
+$background: var(--background)
+$accent_1: var(--accents_1)
+
+@mixin primary($color)
+  background-color: $color
+  color: $background
+  border-color: $color
+  &:hover, &:focus
+    background-color: $background
+    color: $color
+    border-color: $color
+
+@mixin ghost($color)
+  background: $background
   color: $color
   border-color: $color
-  transition: none
-  transition: background-color 0.4s
   &:hover, &:focus
     background-color: $color
-    color: $back
+    color: $background
     border-color: $color
 
 button
@@ -61,66 +73,22 @@ button
     cursor: not-allowed
 
   &.primary
-    background: var(--foreground)
     color: var(--background)
-    border-color: var(--foreground)
-    &:hover, &:focus
-      background-color: var(--background)
-      color: var(--foreground)
-      border-color: var(--foreground)
+    @include primary($foreground)
     &.success
-      background: var(--success)
-      color: var(--background)
-      border-color: var(--success)
-      &:hover, &:focus
-        background-color: var(--background)
-        color: var(--success)
-        border-color: var(--success)
+      @include primary($success)
     &.warning
-      background: var(--warning)
-      color: var(--background)
-      border-color: var(--warning)
-      &:hover, &:focus
-        background-color: var(--background)
-        color: var(--warning)
-        border-color: var(--warning)
+      @include primary($warning)
     &.danger
-      background: var(--error)
-      color: var(--background)
-      border-color: var(--error)
-      &:hover, &:focus
-        background-color: var(--background)
-        color: var(--error)
-        border-color: var(--error)
+      @include primary($danger)
 
   &.ghost
-    background: var(--background)
-    color: var(--foreground)
-    border-color: var(--foreground)
     transition: none
     transition: background-color 0.4s
-    &:hover, &:focus
-      background-color: var(--foreground)
-      color: var(--background)
-      border-color: var(--background)
+    @include ghost($foreground)
     &.success
-      color: var(--success)
-      border-color: var(--success)
-      &:hover, &:focus
-        background-color: var(--success)
-        color: var(--background)
-        border-color: var(--background)
+      @include ghost($success)
     &.danger
-      color: var(--error)
-      border-color: var(--error)
-      &:hover, &:focus
-        background-color: var(--error)
-        color: var(--background)
-        border-color: var(--background)
+      @include ghost($error)
     &.warning
-      color: var(--warning)
-      border-color: var(--warning)
-      &:hover, &:focus
-        background-color: var(--warning)
-        color: var(--background)
-        border-color: var(--background)
+      @include ghost($warning)

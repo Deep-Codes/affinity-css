@@ -3465,7 +3465,8 @@ button.disabled {
 }
 
 button.primary {
-  background: var(--foreground);
+  color: var(--background);
+  background-color: var(--foreground);
   color: var(--background);
   border-color: var(--foreground);
 }
@@ -3477,7 +3478,7 @@ button.primary:hover, button.primary:focus {
 }
 
 button.primary.success {
-  background: var(--success);
+  background-color: var(--success);
   color: var(--background);
   border-color: var(--success);
 }
@@ -3489,7 +3490,7 @@ button.primary.success:hover, button.primary.success:focus {
 }
 
 button.primary.warning {
-  background: var(--warning);
+  background-color: var(--warning);
   color: var(--background);
   border-color: var(--warning);
 }
@@ -3501,7 +3502,7 @@ button.primary.warning:hover, button.primary.warning:focus {
 }
 
 button.primary.danger {
-  background: var(--error);
+  background-color: var(--error);
   color: var(--background);
   border-color: var(--error);
 }
@@ -3513,20 +3514,21 @@ button.primary.danger:hover, button.primary.danger:focus {
 }
 
 button.ghost {
+  transition: none;
+  transition: background-color 0.4s;
   background: var(--background);
   color: var(--foreground);
   border-color: var(--foreground);
-  transition: none;
-  transition: background-color 0.4s;
 }
 
 button.ghost:hover, button.ghost:focus {
   background-color: var(--foreground);
   color: var(--background);
-  border-color: var(--background);
+  border-color: var(--foreground);
 }
 
 button.ghost.success {
+  background: var(--background);
   color: var(--success);
   border-color: var(--success);
 }
@@ -3534,21 +3536,23 @@ button.ghost.success {
 button.ghost.success:hover, button.ghost.success:focus {
   background-color: var(--success);
   color: var(--background);
-  border-color: var(--background);
+  border-color: var(--success);
 }
 
 button.ghost.danger {
-  color: var(--error);
-  border-color: var(--error);
+  background: var(--background);
+  color: #e00;
+  border-color: #e00;
 }
 
 button.ghost.danger:hover, button.ghost.danger:focus {
-  background-color: var(--error);
+  background-color: #e00;
   color: var(--background);
-  border-color: var(--background);
+  border-color: #e00;
 }
 
 button.ghost.warning {
+  background: var(--background);
   color: var(--warning);
   border-color: var(--warning);
 }
@@ -3556,5 +3560,5 @@ button.ghost.warning {
 button.ghost.warning:hover, button.ghost.warning:focus {
   background-color: var(--warning);
   color: var(--background);
-  border-color: var(--background);
+  border-color: var(--warning);
 }
