@@ -1,5 +1,18 @@
 @import '../helpers/layout',  '../helpers/palette'
 
+// Only works on light or Dark
+// as sass variable are not dynamic
+@mixin ghost($color,$back)
+  background: $back
+  color: $color
+  border-color: $color
+  transition: none
+  transition: background-color 0.4s
+  &:hover, &:focus
+    background-color: $color
+    color: $back
+    border-color: $color
+
 button
   box-sizing: border-box
   display: inline-block
@@ -28,8 +41,8 @@ button
   background-color: var(--background)
   border: 1px solid var(--accents_2)
 
-  &:hover,
-  &:focus
+  &:not(.disabled):hover,
+  &:not(.disabled):focus
     background: var(--accents_1) radial-gradient(circle, transparent 1%, var(--accents_1) 1%) center/15000%
     color: var(--foreground)
     background-color: var(--background)
@@ -39,7 +52,75 @@ button
     box-shadow: none
     transform: translate3d(0px, 0px, 0px)
 
-  &:active
+  &:not(.disabled):not(.ghost):active
     background-color: var(--accents_2)
     background-size: 100%
     transition: background 0s
+
+  &.disabled
+    cursor: not-allowed
+
+  &.primary
+    background: var(--foreground)
+    color: var(--background)
+    border-color: var(--foreground)
+    &:hover, &:focus
+      background-color: var(--background)
+      color: var(--foreground)
+      border-color: var(--foreground)
+    &.success
+      background: var(--success)
+      color: var(--background)
+      border-color: var(--success)
+      &:hover, &:focus
+        background-color: var(--background)
+        color: var(--success)
+        border-color: var(--success)
+    &.warning
+      background: var(--warning)
+      color: var(--background)
+      border-color: var(--warning)
+      &:hover, &:focus
+        background-color: var(--background)
+        color: var(--warning)
+        border-color: var(--warning)
+    &.danger
+      background: var(--error)
+      color: var(--background)
+      border-color: var(--error)
+      &:hover, &:focus
+        background-color: var(--background)
+        color: var(--error)
+        border-color: var(--error)
+
+  &.ghost
+    background: var(--background)
+    color: var(--foreground)
+    border-color: var(--foreground)
+    transition: none
+    transition: background-color 0.4s
+    &:hover, &:focus
+      background-color: var(--foreground)
+      color: var(--background)
+      border-color: var(--background)
+    &.success
+      color: var(--success)
+      border-color: var(--success)
+      &:hover, &:focus
+        background-color: var(--success)
+        color: var(--background)
+        border-color: var(--background)
+    &.danger
+      color: var(--error)
+      border-color: var(--error)
+      &:hover, &:focus
+        background-color: var(--error)
+        color: var(--background)
+        border-color: var(--background)
+    &.warning
+      color: var(--warning)
+      border-color: var(--warning)
+      &:hover, &:focus
+        background-color: var(--warning)
+        color: var(--background)
+        border-color: var(--background)

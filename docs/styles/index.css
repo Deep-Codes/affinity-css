@@ -3443,7 +3443,7 @@ button {
   border: 1px solid var(--accents_2);
 }
 
-button:hover, button:focus {
+button:not(.disabled):hover, button:not(.disabled):focus {
   background: var(--accents_1) radial-gradient(circle, transparent 1%, var(--accents_1) 1%) center/15000%;
   color: var(--foreground);
   background-color: var(--background);
@@ -3454,8 +3454,107 @@ button:hover, button:focus {
   transform: translate3d(0px, 0px, 0px);
 }
 
-button:active {
+button:not(.disabled):not(.ghost):active {
   background-color: var(--accents_2);
   background-size: 100%;
   transition: background 0s;
+}
+
+button.disabled {
+  cursor: not-allowed;
+}
+
+button.primary {
+  background: var(--foreground);
+  color: var(--background);
+  border-color: var(--foreground);
+}
+
+button.primary:hover, button.primary:focus {
+  background-color: var(--background);
+  color: var(--foreground);
+  border-color: var(--foreground);
+}
+
+button.primary.success {
+  background: var(--success);
+  color: var(--background);
+  border-color: var(--success);
+}
+
+button.primary.success:hover, button.primary.success:focus {
+  background-color: var(--background);
+  color: var(--success);
+  border-color: var(--success);
+}
+
+button.primary.warning {
+  background: var(--warning);
+  color: var(--background);
+  border-color: var(--warning);
+}
+
+button.primary.warning:hover, button.primary.warning:focus {
+  background-color: var(--background);
+  color: var(--warning);
+  border-color: var(--warning);
+}
+
+button.primary.danger {
+  background: var(--error);
+  color: var(--background);
+  border-color: var(--error);
+}
+
+button.primary.danger:hover, button.primary.danger:focus {
+  background-color: var(--background);
+  color: var(--error);
+  border-color: var(--error);
+}
+
+button.ghost {
+  background: var(--background);
+  color: var(--foreground);
+  border-color: var(--foreground);
+  transition: none;
+  transition: background-color 0.4s;
+}
+
+button.ghost:hover, button.ghost:focus {
+  background-color: var(--foreground);
+  color: var(--background);
+  border-color: var(--background);
+}
+
+button.ghost.success {
+  color: var(--success);
+  border-color: var(--success);
+}
+
+button.ghost.success:hover, button.ghost.success:focus {
+  background-color: var(--success);
+  color: var(--background);
+  border-color: var(--background);
+}
+
+button.ghost.danger {
+  color: var(--error);
+  border-color: var(--error);
+}
+
+button.ghost.danger:hover, button.ghost.danger:focus {
+  background-color: var(--error);
+  color: var(--background);
+  border-color: var(--background);
+}
+
+button.ghost.warning {
+  color: var(--warning);
+  border-color: var(--warning);
+}
+
+button.ghost.warning:hover, button.ghost.warning:focus {
+  background-color: var(--warning);
+  color: var(--background);
+  border-color: var(--background);
 }

@@ -1,11 +1,25 @@
 .mt-10.mb-10
 h3#button.orange-4 # Buttons
 .mt-5.mb-5
+  p Default Button
   button Click Me
+  p Disabled Button
+  button.disabled Disabled Button
+  p Primary Button
+  button.primary.mr-2.mb-4 Primary 
+  button.primary.success.mr-2.mb-4  Success
+  button.primary.warning.mr-2.mb-4  Warning
+  button.primary.danger.mr-2.mb-4  Danger
+  p Ghost Buttons
+  button.ghost.mr-2.mb-4 Ghost 
+  button.ghost.success.mr-2.mb-4 Success 
+  button.ghost.warning.mr-2.mb-4 Warning 
+  button.ghost.danger.mr-2.mb-4 Danger 
 details 
   summary See Code 
   .mt-5.mb-5 
     :marked
       ```html
       <button>Click Me</button>
+      <button class='disabled'>Disabled Button</button>
       ```

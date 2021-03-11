@@ -3203,4 +3203,381 @@ table td:nth-child(1) {
   background-color: var(--background);
 }
 
+.avatar img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50;
+}
+
+.avatar.small {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.avatar.medium {
+  width: 3.75rem;
+  height: 3.75rem;
+}
+
+.avatar.large {
+  width: 5.625rem;
+  height: 5.625rem;
+}
+
+:root[data-theme='theme-light'] {
+  --accents_1: #fafafa;
+  --accents_2: #eaeaea;
+  --accents_3: #999;
+  --accents_4: #888;
+  --accents_5: #666;
+  --accents_6: #444;
+  --accents_7: #333;
+  --accents_8: #111;
+  --background: #fff;
+  --foreground: #000;
+  --selection: #79ffe1;
+  --secondary: #666;
+  --code: #f81ce5;
+  --border: #eaeaea;
+  --error: #e00;
+  --errorLight: #ff1a1a;
+  --errorLighter: #f7d4d6;
+  --errorDark: #c50000;
+  --success: #0070f3;
+  --successLight: #3291ff;
+  --successLighter: #d3e5ff;
+  --successDark: #0761d1;
+  --warning: #f5a623;
+  --warningLight: #f7b955;
+  --warningLighter: #ffefcf;
+  --warningDark: #ab570a;
+  --cyan: #50e3c2;
+  --cyanLighter: #aaffec;
+  --cyanLight: #79ffe1;
+  --cyanDark: #29bc9b;
+  --violet: #7928ca;
+  --violetLighter: #e3d7fc;
+  --violetLight: #8a63d2;
+  --violetDark: #4c2889;
+  --purple: #f81ce5;
+  --alert: #ff0080;
+  --magenta: #eb367f;
+  --link: #0070f3;
+}
+
+:root[data-theme='theme-dark'] {
+  --accents_1: #111;
+  --accents_2: #333;
+  --accents_3: #444;
+  --accents_4: #666;
+  --accents_5: #888;
+  --accents_6: #999;
+  --accents_7: #eaeaea;
+  --accents_8: #fafafa;
+  --background: #000;
+  --foreground: #fff;
+  --selection: #f81ce5;
+  --secondary: #888;
+  --code: #79ffe1;
+  --border: #333;
+  --error: #e00;
+  --errorLighter: #f7d4d6;
+  --errorLight: #ff1a1a;
+  --errorDark: #c50000;
+  --success: #0070f3;
+  --successLighter: #d3e5ff;
+  --successLight: #3291ff;
+  --successDark: #0761d1;
+  --warning: #f5a623;
+  --warningLighter: #ffefcf;
+  --warningLight: #f7b955;
+  --warningDark: #ab570a;
+  --cyan: #50e3c2;
+  --cyanLighter: #aaffec;
+  --cyanLight: #79ffe1;
+  --cyanDark: #29bc9b;
+  --violet: #7928ca;
+  --violetLighter: #e3d7fc;
+  --violetLight: #8a63d2;
+  --violetDark: #4c2889;
+  --purple: #f81ce5;
+  --alert: #ff0080;
+  --magenta: #eb367f;
+  --link: #3291ff;
+}
+
+.badge {
+  padding: 3px 7px;
+  vertical-align: middle;
+  background-color: var(--foreground);
+  color: var(--background);
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 1;
+  min-width: 1rem;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.badge.success {
+  background-color: var(--success);
+}
+
+.badge.warning {
+  background-color: var(--warning);
+}
+
+.badge.error, .badge.danger {
+  background-color: var(--error);
+}
+
+.badge.green {
+  color: #057d00;
+  background-color: #82ff7d;
+  border: 1px solid #07b000;
+}
+
+.badge.cyan {
+  color: #008881;
+  background-color: #88fff9;
+  border: 1px solid #00bbb2;
+}
+
+.badge.pink {
+  color: #840043;
+  background-color: #ff84c2;
+  border: 1px solid #b7005c;
+}
+
+:root[data-theme='theme-light'] {
+  --accents_1: #fafafa;
+  --accents_2: #eaeaea;
+  --accents_3: #999;
+  --accents_4: #888;
+  --accents_5: #666;
+  --accents_6: #444;
+  --accents_7: #333;
+  --accents_8: #111;
+  --background: #fff;
+  --foreground: #000;
+  --selection: #79ffe1;
+  --secondary: #666;
+  --code: #f81ce5;
+  --border: #eaeaea;
+  --error: #e00;
+  --errorLight: #ff1a1a;
+  --errorLighter: #f7d4d6;
+  --errorDark: #c50000;
+  --success: #0070f3;
+  --successLight: #3291ff;
+  --successLighter: #d3e5ff;
+  --successDark: #0761d1;
+  --warning: #f5a623;
+  --warningLight: #f7b955;
+  --warningLighter: #ffefcf;
+  --warningDark: #ab570a;
+  --cyan: #50e3c2;
+  --cyanLighter: #aaffec;
+  --cyanLight: #79ffe1;
+  --cyanDark: #29bc9b;
+  --violet: #7928ca;
+  --violetLighter: #e3d7fc;
+  --violetLight: #8a63d2;
+  --violetDark: #4c2889;
+  --purple: #f81ce5;
+  --alert: #ff0080;
+  --magenta: #eb367f;
+  --link: #0070f3;
+}
+
+:root[data-theme='theme-dark'] {
+  --accents_1: #111;
+  --accents_2: #333;
+  --accents_3: #444;
+  --accents_4: #666;
+  --accents_5: #888;
+  --accents_6: #999;
+  --accents_7: #eaeaea;
+  --accents_8: #fafafa;
+  --background: #000;
+  --foreground: #fff;
+  --selection: #f81ce5;
+  --secondary: #888;
+  --code: #79ffe1;
+  --border: #333;
+  --error: #e00;
+  --errorLighter: #f7d4d6;
+  --errorLight: #ff1a1a;
+  --errorDark: #c50000;
+  --success: #0070f3;
+  --successLighter: #d3e5ff;
+  --successLight: #3291ff;
+  --successDark: #0761d1;
+  --warning: #f5a623;
+  --warningLighter: #ffefcf;
+  --warningLight: #f7b955;
+  --warningDark: #ab570a;
+  --cyan: #50e3c2;
+  --cyanLighter: #aaffec;
+  --cyanLight: #79ffe1;
+  --cyanDark: #29bc9b;
+  --violet: #7928ca;
+  --violetLighter: #e3d7fc;
+  --violetLight: #8a63d2;
+  --violetDark: #4c2889;
+  --purple: #f81ce5;
+  --alert: #ff0080;
+  --magenta: #eb367f;
+  --link: #3291ff;
+}
+
+button {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0px 1.375rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  min-width: 12.5rem;
+  width: auto;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 0.875rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  outline: none;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  transition: background 0.8s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  pointer-events: auto;
+  box-shadow: none;
+  background-position: center;
+  color: var(--accents_5);
+  background-color: var(--background);
+  border: 1px solid var(--accents_2);
+}
+
+button:not(.disabled):hover, button:not(.disabled):focus {
+  background: var(--accents_1) radial-gradient(circle, transparent 1%, var(--accents_1) 1%) center/15000%;
+  color: var(--foreground);
+  background-color: var(--background);
+  border-color: var(--foreground);
+  cursor: pointer;
+  pointer-events: auto;
+  box-shadow: none;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+button:not(.disabled):not(.ghost):active {
+  background-color: var(--accents_2);
+  background-size: 100%;
+  transition: background 0s;
+}
+
+button.disabled {
+  cursor: not-allowed;
+}
+
+button.primary {
+  background: var(--foreground);
+  color: var(--background);
+  border-color: var(--foreground);
+}
+
+button.primary:hover, button.primary:focus {
+  background-color: var(--background);
+  color: var(--foreground);
+  border-color: var(--foreground);
+}
+
+button.primary.success {
+  background: var(--success);
+  color: var(--background);
+  border-color: var(--success);
+}
+
+button.primary.success:hover, button.primary.success:focus {
+  background-color: var(--background);
+  color: var(--success);
+  border-color: var(--success);
+}
+
+button.primary.warning {
+  background: var(--warning);
+  color: var(--background);
+  border-color: var(--warning);
+}
+
+button.primary.warning:hover, button.primary.warning:focus {
+  background-color: var(--background);
+  color: var(--warning);
+  border-color: var(--warning);
+}
+
+button.primary.danger {
+  background: var(--error);
+  color: var(--background);
+  border-color: var(--error);
+}
+
+button.primary.danger:hover, button.primary.danger:focus {
+  background-color: var(--background);
+  color: var(--error);
+  border-color: var(--error);
+}
+
+button.ghost {
+  background: var(--background);
+  color: var(--foreground);
+  border-color: var(--foreground);
+  transition: none;
+  transition: background-color 0.4s;
+}
+
+button.ghost:hover, button.ghost:focus {
+  background-color: var(--foreground);
+  color: var(--background);
+  border-color: var(--background);
+}
+
+button.ghost.success {
+  color: var(--success);
+  border-color: var(--success);
+}
+
+button.ghost.success:hover, button.ghost.success:focus {
+  background-color: var(--success);
+  color: var(--background);
+  border-color: var(--background);
+}
+
+button.ghost.danger {
+  color: var(--error);
+  border-color: var(--error);
+}
+
+button.ghost.danger:hover, button.ghost.danger:focus {
+  background-color: var(--error);
+  color: var(--background);
+  border-color: var(--background);
+}
+
+button.ghost.warning {
+  color: var(--warning);
+  border-color: var(--warning);
+}
+
+button.ghost.warning:hover, button.ghost.warning:focus {
+  background-color: var(--warning);
+  color: var(--background);
+  border-color: var(--background);
+}
+
 /*# sourceMappingURL=index.css.map */
