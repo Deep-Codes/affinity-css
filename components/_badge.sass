@@ -1,0 +1,36 @@
+@import '../helpers/layout',  '../helpers/palette'
+
+// ? Very Experimental would be improved later
+@mixin custom-badge($color)
+  color: darken($color, 50%)
+  background-color: $color
+  border: 1px solid darken($color , 40%)
+
+.badge
+  padding: 3px 7px
+  vertical-align: middle
+  background-color: var(--foreground)
+  color: var(--background)
+  display: inline-block
+  font-size: 0.875rem
+  font-weight: bold
+  line-height: 1
+  min-width: 1rem
+  border-radius: 16px
+  text-align: center
+
+  &.success
+    background-color: var(--success)
+
+  &.warning
+    background-color: var(--warning)
+
+  &.error, &.danger
+    background-color: var(--error)
+
+  &.green
+    @include custom-badge(#82ff7d)
+  &.cyan
+    @include custom-badge(#88fff9 )
+  &.pink
+    @include custom-badge(#ff84c2)
