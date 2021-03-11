@@ -3020,3 +3020,55 @@ table td:nth-child(1) {
 .bg-rose-9 {
   background-color: #881337;
 }
+
+.t-xs {
+  font-size: 0.75rem;
+}
+
+.t-sm {
+  font-size: 0.875rem;
+}
+
+.t-base {
+  font-size: 1rem;
+}
+
+.t-lg {
+  font-size: 1.125rem;
+}
+
+.t-xl {
+  font-size: 1.25rem;
+}
+
+.t-2xl {
+  font-size: 1.5rem;
+}
+
+.t-3xl {
+  font-size: 1.875rem;
+}
+
+.t-4xl {
+  font-size: 2.25rem;
+}
+
+.t-5xl {
+  font-size: 3rem;
+}
+
+.t-6xl {
+  font-size: 3.75rem;
+}
+
+.t-7xl {
+  font-size: 4.5rem;
+}
+
+.t-8xl {
+  font-size: 6rem;
+}
+
+.t-9xl {
+  font-size: 8rem;
+}
