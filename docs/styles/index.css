@@ -3773,3 +3773,118 @@ button.ghost.warning:hover, button.ghost.warning:focus {
   color: var(--background);
   background-color: var(--error);
 }
+
+input {
+  padding: 0 0.685rem;
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 5px;
+  background-color: transparent;
+  font-size: 0.875rem;
+  height: 2.3125rem;
+  line-height: 1.685rem;
+  width: initial;
+  outline: 0;
+  box-sizing: border-box;
+  border: 1px solid var(--accents_2);
+  -webkit-appearance: none;
+  transition: border 0.2s ease, color 0.2s ease;
+}
+
+input:focus {
+  border-color: var(--accents_5);
+}
+
+input.disabled {
+  background: var(--accents-1);
+  cursor: not-allowed;
+}
+
+input.mini {
+  font-size: .75rem;
+  height: 1.75rem;
+  line-height: 1.25rem;
+}
+
+input.small {
+  font-size: .85rem;
+  height: 2rem;
+  line-height: 1.375rem;
+}
+
+input.large {
+  font-size: 1rem;
+  height: 2.625rem;
+  line-height: 2.375rem;
+}
+
+input.full-width {
+  min-width: 95%;
+}
+
+input.success {
+  color: var(--success);
+  border-color: var(--success);
+}
+
+input.warning {
+  color: var(--warning);
+  border-color: var(--warning);
+}
+
+input.danger {
+  color: var(--error);
+  border-color: var(--error);
+}
+
+.input-group {
+  display: inline-flex;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.input-group input {
+  flex: 1;
+  margin: 0;
+}
+
+.input-group > .label {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accents_1);
+  border-radius: 5px;
+  border-bottom: 1px solid var(--accents_2);
+  border-top: 1px solid var(--accents_2);
+  color: var(--accents_6);
+  font-size: 0.875rem;
+  line-height: 1;
+  width: initial;
+  padding: 0 0.625rem;
+  user-select: none;
+}
+
+.input-group.suffix input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input-group.suffix > .label.suffix {
+  border-left: none;
+  border-right: 1px solid var(--accents_2);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.input-group.prefix input {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.input-group.prefix > .label.prefix {
+  border-right: none;
+  border-left: 1px solid var(--accents_2);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}

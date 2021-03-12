@@ -1,0 +1,57 @@
+.mt-10.mb-10
+  h3#input.cyan-4 # Inputs
+  p Simple Input
+  input.mr-2(value='Basic Input')
+  input.disabled(value='Disabled Input', disabled='true')
+  p Different States
+  input.success.mr-2(value='Success Input')
+  input.warning.mr-2(value='Warning Input')
+  input.danger.mr-2(value='Error Name')
+  p Different Sizes 
+  input.mini.mb-2(value='Mini Input')
+  br
+  input.small.mb-2(value='Small Input')
+  br
+  input.mb-2(value='Default Input')
+  br
+  input.large.mb-2(value='Large Input')
+  br
+  p Input with Full Width
+  input.full-width(value='Full Width Input')
+  p Input with Label 
+  div.input-group.prefix.mb-4
+    span.label.prefix Company
+    input(value='Enter Name')
+  br
+  div.input-group.suffix
+    input(value='Enter Name')
+    span.label.suffix Company
+  details.mt-5 
+    summary See Code 
+    .mt-5.mb-5 
+      :marked
+        ```html
+        <input />
+        <input class="disabled" />
+
+        <input class="success" />
+        <input class="warning" />
+        <input class="danger" />
+
+        <input class="mini" />
+        <input class="small" />
+        <input />
+        <input class="large" />
+        
+        <input class="full-width" />
+
+        <div class="input-group prefix">
+          <span class="label prefix">Company</span>
+          <input />
+        </div>
+        
+        <div class="input-group suffix">
+          <input />
+          <span class="label suffix">Company</span>
+        </div>
+        ```

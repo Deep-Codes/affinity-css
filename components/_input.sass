@@ -1,0 +1,104 @@
+$success: var(--success)
+$warning: var(--warning)
+$danger: var(--error)
+$accent_2: var(--accents_2)
+$foreground: var(--foreground)
+
+@mixin type($color)
+  color: $color
+  border-color: $color
+
+input
+  padding: 0 0.685rem
+  display: inline-flex
+  vertical-align: middle
+  align-items: center
+  border-radius: $radius
+  background-color: transparent
+  font-size: 0.875rem
+  height: 2.3125rem
+  line-height: 1.685rem
+  width: initial
+  outline: 0
+  box-sizing: border-box
+  border: 1px solid var(--accents_2)
+  -webkit-appearance: none
+  transition: border 0.2s ease, color 0.2s ease
+
+  &:focus
+    border-color: var(--accents_5)
+
+  &.disabled
+    background: var(--accents-1)
+    cursor: not-allowed
+
+  &.mini
+    font-size: .75rem
+    height: 1.75rem
+    line-height: 1.25rem
+
+  &.small
+    font-size: .85rem
+    height: 2rem
+    line-height: 1.375rem
+
+  &.large
+    font-size: 1rem
+    height: 2.625rem
+    line-height: 2.375rem
+
+  &.full-width
+    min-width: 95%
+
+  &.success
+    @include type($success)
+  &.warning
+    @include type($warning)
+  &.danger
+    @include type($danger)
+
+.input-group
+  display: inline-flex
+  border-radius: $radius
+  background-color: transparent
+
+  input
+    flex: 1
+    margin: 0
+
+  >.label
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    background-color: var(--accents_1)
+    border-radius: $radius
+    border-bottom: 1px solid var(--accents_2)
+    border-top: 1px solid var(--accents_2)
+    color: var(--accents_6)
+    font-size: 0.875rem
+    line-height: 1
+    width: initial
+    padding: 0 0.625rem
+    user-select: none
+
+  &.suffix
+    input
+      border-top-right-radius: 0
+      border-bottom-right-radius: 0
+
+    >.label.suffix
+      border-left: none
+      border-right: 1px solid var(--accents_2)
+      border-top-left-radius: 0
+      border-bottom-left-radius: 0
+
+  &.prefix
+    input
+      border-top-left-radius: 0
+      border-bottom-left-radius: 0
+
+    >.label.prefix
+      border-right: none
+      border-left: 1px solid var(--accents_2)
+      border-top-right-radius: 0
+      border-bottom-right-radius: 0
