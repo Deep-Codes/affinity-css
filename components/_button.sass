@@ -53,6 +53,33 @@ button
   background-color: var(--background)
   border: 1px solid var(--accents_2)
 
+  &.mini
+    height: 1.5rem
+    line-height: 1.5rem
+    padding: 0 1.375rem
+    width: initial
+    min-width: 5.25rem
+    font-size: .75rem
+
+  &.small
+    height: 2rem
+    line-height: 2rem
+    padding: 0 1.25rem
+    width: initial
+    min-width: 9.375rem
+    font-size: .875rem
+
+  &.big, &.huge, &.large
+    height: 2.75rem
+    line-height: 2.75rem
+    padding: 0 1.875rem
+    width: initial
+    min-width: 15.625rem
+    font-size: 1rem
+
+  &.shadow
+    box-shadow: 0 3px 10px var(--accents_3)
+
   &:not(.disabled):hover,
   &:not(.disabled):focus
     background: var(--accents_1) radial-gradient(circle, transparent 1%, var(--accents_1) 1%) center/15000%
