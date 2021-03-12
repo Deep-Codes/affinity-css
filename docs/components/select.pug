@@ -1,0 +1,25 @@
+.mt-10.mb-10
+  h3#select.cyan-4 # Selector
+  p Basic Select
+  select
+    option Dog 
+    option Cat
+  p Disabled Select 
+  select(disabled='true').disabled
+    option Dog 
+    option Cat
+  details.mt-5 
+    summary See Code 
+    .mt-5.mb-5 
+      :marked
+        ```html
+        <select>
+          <option>Dog</option>
+          <option>Cat</option>
+        </select>
+
+        <select class='disabled'>
+          <option>Dog</option>
+          <option>Cat</option>
+        </select>
+        ```

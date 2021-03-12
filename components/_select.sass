@@ -1,0 +1,27 @@
+select
+  width: 250px
+  border-radius: 5px
+  padding-left: 0.685rem
+  font-size: 0.875rem
+  height: 2.3125rem
+  line-height: 1.685rem
+  background: none
+  outline: 0
+  box-sizing: border-box
+  border: 1px solid var(--accents_2)
+  transition: border 0.2s ease, color 0.2s ease
+  background-image: linear-gradient(45deg, transparent 50%, var(--accents_4) 50%),linear-gradient(135deg, var(--accents_4) 50%, transparent 50%)
+  background-position: calc(100% - 20px) calc(1em + 2px),calc(100% - 15px) calc(1em + 2px),calc(100% - 2.5em) 0.5em
+  background-size: 5px 5px,5px 5px,1px 1.5em
+  background-repeat: no-repeat
+  appearance: none
+
+  &:focus
+    border: 1px solid var(--foreground)
+    background-image: linear-gradient(45deg, var(--foreground) 50%, transparent 50%),linear-gradient(135deg, transparent 50%, var(--foreground) 50%)
+    background-position: calc(100% - 15px) 1em,calc(100% - 20px) 1em,calc(100% - 2.5em) 0.5em
+    background-size: 5px 5px,5px 5px,1px 1.5em
+    background-repeat: no-repeat
+
+  &.disabled
+    cursor: not-allowed
