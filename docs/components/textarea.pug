@@ -1,0 +1,15 @@
+.mt-10.mb-10
+  h3#textarea.cyan-4 # TextArea
+  p Simple TextArea
+  textarea This is a Textarea Element
+  p Disabled TextArea
+  textarea.disabled(disabled=true) This is a Disabled Textarea Element
+  details.mt-5 
+    summary See Code 
+    .mt-5.mb-5 
+      :marked
+        ```html
+        <textarea>This is a Textarea Element</textarea>
+
+        <textarea class='disabled'>This is a Disabled Textarea Element</textarea>
+        ```

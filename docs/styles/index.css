@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://rsms.me/inter/inter.css');
+@import url("https://rsms.me/inter/inter.css");
 :root[data-theme='theme-light'] {
   --accents_1: #fafafa;
   --accents_2: #eaeaea;
@@ -86,7 +86,7 @@ html,
 body {
   background-color: var(--background);
   color: var(--foreground);
-  transition: 0.3s all ease;
+  transition: 0.30s all ease;
 }
 
 html {
@@ -104,9 +104,7 @@ body {
   min-height: 100%;
   position: relative;
   overflow-x: hidden;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 *,
@@ -122,9 +120,7 @@ small {
   font-weight: 400;
   color: inherit;
   letter-spacing: -0.005625rem;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 p {
@@ -158,6 +154,7 @@ a {
   font-size: inherit;
   -webkit-touch-callout: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-box-align: center;
   align-items: center;
   color: var(--link);
   text-decoration: none;
@@ -264,8 +261,7 @@ pre {
   border-radius: 5px;
   padding: calc(0.75 * 16pt) 16pt;
   margin: 16pt 0;
-  font-family: 'Menlo', Monaco, Lucida Console, Liberation Mono,
-    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+  font-family: "Menlo", Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
   white-space: pre;
   overflow: auto;
   line-height: 1.5;
@@ -275,8 +271,7 @@ pre {
   position: relative;
 }
 
-pre span,
-pre p {
+pre span, pre p {
   font-size: inherit;
   color: inherit;
   margin: 0;
@@ -289,8 +284,7 @@ pre code {
   white-space: pre;
 }
 
-pre code:before,
-pre code:after {
+pre code:before, pre code:after {
   display: none;
 }
 
@@ -303,14 +297,12 @@ pre::-webkit-scrollbar {
 
 code {
   color: var(--code);
-  font-family: 'Menlo', Monaco, Lucida Console, Liberation Mono,
-    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+  font-family: "Menlo", Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
   font-size: 0.9em;
   white-space: pre-wrap;
 }
 
-code:before,
-code:after {
+code:before, code:after {
   content: '\`';
 }
 
@@ -334,9 +326,6 @@ details:active {
 
 summary {
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-weight: bold;
   outline: none;
@@ -358,19 +347,7 @@ summary:active {
 }
 
 details[open] > div {
-  -webkit-animation: fade-in 0.5s forwards;
   animation: fade-in 0.5s forwards;
-}
-
-@-webkit-keyframes fade-in {
-  0% {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }
 
 @keyframes fade-in {
@@ -402,11 +379,6 @@ blockquote :global(*:last-child) {
   margin-bottom: 0;
 }
 
-::-moz-selection {
-  background-color: var(--selection);
-  color: var(--foreground);
-}
-
 ::selection {
   background-color: var(--selection);
   color: var(--foreground);
@@ -426,8 +398,7 @@ table tbody tr td {
   height: 3.125rem;
 }
 
-table th,
-table td {
+table th, table td {
   padding: 0 0.625rem;
   text-align: left;
 }
@@ -3339,8 +3310,7 @@ table td:nth-child(1) {
   background-color: var(--warning);
 }
 
-.badge.error,
-.badge.danger {
+.badge.error, .badge.danger {
   background-color: var(--error);
 }
 
@@ -3455,11 +3425,9 @@ button {
   border-radius: 5px;
   font-weight: 400;
   font-size: 0.875rem;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   outline: none;
+  -webkit-box-pack: center;
   justify-content: center;
   text-align: center;
   white-space: nowrap;
@@ -3481,7 +3449,7 @@ button.mini {
   padding: 0 1.375rem;
   width: initial;
   min-width: 5.25rem;
-  font-size: 0.75rem;
+  font-size: .75rem;
 }
 
 button.small {
@@ -3490,12 +3458,10 @@ button.small {
   padding: 0 1.25rem;
   width: initial;
   min-width: 9.375rem;
-  font-size: 0.875rem;
+  font-size: .875rem;
 }
 
-button.big,
-button.huge,
-button.large {
+button.big, button.huge, button.large {
   height: 2.75rem;
   line-height: 2.75rem;
   padding: 0 1.875rem;
@@ -3508,10 +3474,8 @@ button.shadow {
   box-shadow: 0 3px 10px var(--accents_3);
 }
 
-button:not(.disabled):hover,
-button:not(.disabled):focus {
-  background: var(--accents_1)
-    radial-gradient(circle, transparent 1%, var(--accents_1) 1%) center/15000%;
+button:not(.disabled):hover, button:not(.disabled):focus {
+  background: var(--accents_1) radial-gradient(circle, transparent 1%, var(--accents_1) 1%) center/15000%;
   color: var(--foreground);
   background-color: var(--background);
   border-color: var(--foreground);
@@ -3538,8 +3502,7 @@ button.primary {
   border-color: var(--foreground);
 }
 
-button.primary:hover,
-button.primary:focus {
+button.primary:hover, button.primary:focus {
   background-color: var(--background);
   color: var(--foreground);
   border-color: var(--foreground);
@@ -3551,8 +3514,7 @@ button.primary.success {
   border-color: var(--success);
 }
 
-button.primary.success:hover,
-button.primary.success:focus {
+button.primary.success:hover, button.primary.success:focus {
   background-color: var(--background);
   color: var(--success);
   border-color: var(--success);
@@ -3564,8 +3526,7 @@ button.primary.warning {
   border-color: var(--warning);
 }
 
-button.primary.warning:hover,
-button.primary.warning:focus {
+button.primary.warning:hover, button.primary.warning:focus {
   background-color: var(--background);
   color: var(--warning);
   border-color: var(--warning);
@@ -3577,8 +3538,7 @@ button.primary.danger {
   border-color: var(--error);
 }
 
-button.primary.danger:hover,
-button.primary.danger:focus {
+button.primary.danger:hover, button.primary.danger:focus {
   background-color: var(--background);
   color: var(--error);
   border-color: var(--error);
@@ -3592,8 +3552,7 @@ button.ghost {
   border-color: var(--foreground);
 }
 
-button.ghost:hover,
-button.ghost:focus {
+button.ghost:hover, button.ghost:focus {
   background-color: var(--foreground);
   color: var(--background);
   border-color: var(--foreground);
@@ -3605,8 +3564,7 @@ button.ghost.success {
   border-color: var(--success);
 }
 
-button.ghost.success:hover,
-button.ghost.success:focus {
+button.ghost.success:hover, button.ghost.success:focus {
   background-color: var(--success);
   color: var(--background);
   border-color: var(--success);
@@ -3618,8 +3576,7 @@ button.ghost.danger {
   border-color: #e00;
 }
 
-button.ghost.danger:hover,
-button.ghost.danger:focus {
+button.ghost.danger:hover, button.ghost.danger:focus {
   background-color: #e00;
   color: var(--background);
   border-color: #e00;
@@ -3631,8 +3588,7 @@ button.ghost.warning {
   border-color: var(--warning);
 }
 
-button.ghost.warning:hover,
-button.ghost.warning:focus {
+button.ghost.warning:hover, button.ghost.warning:focus {
   background-color: var(--warning);
   color: var(--background);
   border-color: var(--warning);
@@ -3731,9 +3687,6 @@ button.ghost.warning:focus {
 
 .note .note-type {
   text-transform: uppercase;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   line-height: 1.5;
   padding-right: 4pt;
@@ -3741,33 +3694,27 @@ button.ghost.warning:focus {
   font-size: 0.875rem;
 }
 
-.note.hint,
-.note.success {
+.note.hint, .note.success {
   border-color: var(--success);
 }
 
-.note.hint > .note-type,
-.note.success > .note-type {
+.note.hint > .note-type, .note.success > .note-type {
   color: var(--success);
 }
 
-.note.alert,
-.note.warning {
+.note.alert, .note.warning {
   border-color: var(--warning);
 }
 
-.note.alert > .note-type,
-.note.warning > .note-type {
+.note.alert > .note-type, .note.warning > .note-type {
   color: var(--warning);
 }
 
-.note.error,
-.note.danger {
+.note.error, .note.danger {
   border-color: var(--error);
 }
 
-.note.error > .note-type,
-.note.danger > .note-type {
+.note.error > .note-type, .note.danger > .note-type {
   color: var(--error);
 }
 
@@ -3855,13 +3802,13 @@ input.disabled {
 }
 
 input.mini {
-  font-size: 0.75rem;
+  font-size: .75rem;
   height: 1.75rem;
   line-height: 1.25rem;
 }
 
 input.small {
-  font-size: 0.85rem;
+  font-size: .85rem;
   height: 2rem;
   line-height: 1.375rem;
 }
@@ -3915,9 +3862,6 @@ input.danger {
   line-height: 1;
   width: initial;
   padding: 0 0.625rem;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -3957,32 +3901,18 @@ select {
   box-sizing: border-box;
   border: 1px solid var(--accents_2);
   transition: border 0.2s ease, color 0.2s ease;
-  background-image: linear-gradient(
-      45deg,
-      transparent 50%,
-      var(--accents_4) 50%
-    ),
-    linear-gradient(135deg, var(--accents_4) 50%, transparent 50%);
-  background-position: calc(100% - 20px) calc(1em + 2px),
-    calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
-  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-image: linear-gradient(45deg, transparent 50%, var(--accents_4) 50%), linear-gradient(135deg, var(--accents_4) 50%, transparent 50%);
+  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px,5px 5px,1px 1.5em;
   background-repeat: no-repeat;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 
 select:focus {
   border: 1px solid var(--foreground);
-  background-image: linear-gradient(
-      45deg,
-      var(--foreground) 50%,
-      transparent 50%
-    ),
-    linear-gradient(135deg, transparent 50%, var(--foreground) 50%);
-  background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em,
-    calc(100% - 2.5em) 0.5em;
-  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-image: linear-gradient(45deg, var(--foreground) 50%, transparent 50%), linear-gradient(135deg, transparent 50%, var(--foreground) 50%);
+  background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em, calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px,5px 5px,1px 1.5em;
   background-repeat: no-repeat;
 }
 
@@ -3990,4 +3920,27 @@ select.disabled {
   cursor: not-allowed;
 }
 
-/*# sourceMappingURL=index.css.map */
+textarea {
+  background-color: transparent;
+  box-shadow: none;
+  display: block;
+  font-size: 0.875rem;
+  width: 100%;
+  height: 100%;
+  min-height: 6.25rem;
+  outline: none;
+  padding: 8pt;
+  border-radius: 5px;
+  line-height: 1.685rem;
+  border: 1px solid var(--accents_2);
+  transition: border 0.2s ease, color 0.2s ease;
+}
+
+textarea:hover {
+  border: 1px solid var(--foreground);
+}
+
+textarea.disabled {
+  background: var(--accents-1);
+  cursor: not-allowed;
+}
