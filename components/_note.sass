@@ -1,0 +1,32 @@
+@import '../helpers/layout',  '../helpers/palette'
+
+.note
+  padding: $gapHalf $gap
+  font-size: 0.875rem
+  line-height: 1.8
+  border: 1px solid var(--accents_2)
+  background-color: var(--background)
+  border-radius: $radius
+
+  .note-type
+    text-transform: uppercase
+    user-select: none
+    line-height: 1.5
+    padding-right: $gapQuarter
+    font-weight: 600
+    font-size: 0.875rem
+
+  &.hint, &.success
+    border-color: var(--success)
+    >.note-type
+      color: var(--success)
+
+  &.alert, &.warning
+    border-color: var(--warning)
+    >.note-type
+      color: var(--warning)
+
+  &.error, &.danger
+    border-color: var(--error)
+    >.note-type
+      color: var(--error)

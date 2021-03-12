@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://rsms.me/inter/inter.css");
+@import url('https://rsms.me/inter/inter.css');
 :root[data-theme='theme-light'] {
   --accents_1: #fafafa;
   --accents_2: #eaeaea;
@@ -86,7 +86,7 @@ html,
 body {
   background-color: var(--background);
   color: var(--foreground);
-  transition: 0.30s all ease;
+  transition: 0.3s all ease;
 }
 
 html {
@@ -104,7 +104,9 @@ body {
   min-height: 100%;
   position: relative;
   overflow-x: hidden;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
 }
 
 *,
@@ -120,7 +122,9 @@ small {
   font-weight: 400;
   color: inherit;
   letter-spacing: -0.005625rem;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
 }
 
 p {
@@ -260,7 +264,8 @@ pre {
   border-radius: 5px;
   padding: calc(0.75 * 16pt) 16pt;
   margin: 16pt 0;
-  font-family: "Menlo", Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+  font-family: 'Menlo', Monaco, Lucida Console, Liberation Mono,
+    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
   white-space: pre;
   overflow: auto;
   line-height: 1.5;
@@ -270,7 +275,8 @@ pre {
   position: relative;
 }
 
-pre span, pre p {
+pre span,
+pre p {
   font-size: inherit;
   color: inherit;
   margin: 0;
@@ -283,7 +289,8 @@ pre code {
   white-space: pre;
 }
 
-pre code:before, pre code:after {
+pre code:before,
+pre code:after {
   display: none;
 }
 
@@ -296,12 +303,14 @@ pre::-webkit-scrollbar {
 
 code {
   color: var(--code);
-  font-family: "Menlo", Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+  font-family: 'Menlo', Monaco, Lucida Console, Liberation Mono,
+    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
   font-size: 0.9em;
   white-space: pre-wrap;
 }
 
-code:before, code:after {
+code:before,
+code:after {
   content: '\`';
 }
 
@@ -326,9 +335,9 @@ details:active {
 summary {
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   font-weight: bold;
   outline: none;
 }
@@ -350,7 +359,7 @@ summary:active {
 
 details[open] > div {
   -webkit-animation: fade-in 0.5s forwards;
-          animation: fade-in 0.5s forwards;
+  animation: fade-in 0.5s forwards;
 }
 
 @-webkit-keyframes fade-in {
@@ -417,7 +426,8 @@ table tbody tr td {
   height: 3.125rem;
 }
 
-table th, table td {
+table th,
+table td {
   padding: 0 0.625rem;
   text-align: left;
 }
@@ -3329,7 +3339,8 @@ table td:nth-child(1) {
   background-color: var(--warning);
 }
 
-.badge.error, .badge.danger {
+.badge.error,
+.badge.danger {
   background-color: var(--error);
 }
 
@@ -3351,88 +3362,6 @@ table td:nth-child(1) {
   border: 1px solid #b7005c;
 }
 
-:root[data-theme='theme-light'] {
-  --accents_1: #fafafa;
-  --accents_2: #eaeaea;
-  --accents_3: #999;
-  --accents_4: #888;
-  --accents_5: #666;
-  --accents_6: #444;
-  --accents_7: #333;
-  --accents_8: #111;
-  --background: #fff;
-  --foreground: #000;
-  --selection: #79ffe1;
-  --secondary: #666;
-  --code: #f81ce5;
-  --border: #eaeaea;
-  --error: #e00;
-  --errorLight: #ff1a1a;
-  --errorLighter: #f7d4d6;
-  --errorDark: #c50000;
-  --success: #0070f3;
-  --successLight: #3291ff;
-  --successLighter: #d3e5ff;
-  --successDark: #0761d1;
-  --warning: #f5a623;
-  --warningLight: #f7b955;
-  --warningLighter: #ffefcf;
-  --warningDark: #ab570a;
-  --cyan: #50e3c2;
-  --cyanLighter: #aaffec;
-  --cyanLight: #79ffe1;
-  --cyanDark: #29bc9b;
-  --violet: #7928ca;
-  --violetLighter: #e3d7fc;
-  --violetLight: #8a63d2;
-  --violetDark: #4c2889;
-  --purple: #f81ce5;
-  --alert: #ff0080;
-  --magenta: #eb367f;
-  --link: #0070f3;
-}
-
-:root[data-theme='theme-dark'] {
-  --accents_1: #111;
-  --accents_2: #333;
-  --accents_3: #444;
-  --accents_4: #666;
-  --accents_5: #888;
-  --accents_6: #999;
-  --accents_7: #eaeaea;
-  --accents_8: #fafafa;
-  --background: #000;
-  --foreground: #fff;
-  --selection: #f81ce5;
-  --secondary: #888;
-  --code: #79ffe1;
-  --border: #333;
-  --error: #e00;
-  --errorLighter: #f7d4d6;
-  --errorLight: #ff1a1a;
-  --errorDark: #c50000;
-  --success: #0070f3;
-  --successLighter: #d3e5ff;
-  --successLight: #3291ff;
-  --successDark: #0761d1;
-  --warning: #f5a623;
-  --warningLighter: #ffefcf;
-  --warningLight: #f7b955;
-  --warningDark: #ab570a;
-  --cyan: #50e3c2;
-  --cyanLighter: #aaffec;
-  --cyanLight: #79ffe1;
-  --cyanDark: #29bc9b;
-  --violet: #7928ca;
-  --violetLighter: #e3d7fc;
-  --violetLight: #8a63d2;
-  --violetDark: #4c2889;
-  --purple: #f81ce5;
-  --alert: #ff0080;
-  --magenta: #eb367f;
-  --link: #3291ff;
-}
-
 button {
   box-sizing: border-box;
   display: inline-block;
@@ -3445,9 +3374,9 @@ button {
   font-weight: 400;
   font-size: 0.875rem;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   outline: none;
   justify-content: center;
   text-align: center;
@@ -3464,8 +3393,10 @@ button {
   border: 1px solid var(--accents_2);
 }
 
-button:not(.disabled):hover, button:not(.disabled):focus {
-  background: var(--accents_1) radial-gradient(circle, transparent 1%, var(--accents_1) 1%) center/15000%;
+button:not(.disabled):hover,
+button:not(.disabled):focus {
+  background: var(--accents_1)
+    radial-gradient(circle, transparent 1%, var(--accents_1) 1%) center/15000%;
   color: var(--foreground);
   background-color: var(--background);
   border-color: var(--foreground);
@@ -3491,7 +3422,8 @@ button.primary {
   border-color: var(--foreground);
 }
 
-button.primary:hover, button.primary:focus {
+button.primary:hover,
+button.primary:focus {
   background-color: var(--background);
   color: var(--foreground);
   border-color: var(--foreground);
@@ -3503,7 +3435,8 @@ button.primary.success {
   border-color: var(--success);
 }
 
-button.primary.success:hover, button.primary.success:focus {
+button.primary.success:hover,
+button.primary.success:focus {
   background-color: var(--background);
   color: var(--success);
   border-color: var(--success);
@@ -3515,7 +3448,8 @@ button.primary.warning {
   border-color: var(--warning);
 }
 
-button.primary.warning:hover, button.primary.warning:focus {
+button.primary.warning:hover,
+button.primary.warning:focus {
   background-color: var(--background);
   color: var(--warning);
   border-color: var(--warning);
@@ -3527,7 +3461,8 @@ button.primary.danger {
   border-color: var(--error);
 }
 
-button.primary.danger:hover, button.primary.danger:focus {
+button.primary.danger:hover,
+button.primary.danger:focus {
   background-color: var(--background);
   color: var(--error);
   border-color: var(--error);
@@ -3541,7 +3476,8 @@ button.ghost {
   transition: background-color 0.4s;
 }
 
-button.ghost:hover, button.ghost:focus {
+button.ghost:hover,
+button.ghost:focus {
   background-color: var(--foreground);
   color: var(--background);
   border-color: var(--background);
@@ -3552,7 +3488,8 @@ button.ghost.success {
   border-color: var(--success);
 }
 
-button.ghost.success:hover, button.ghost.success:focus {
+button.ghost.success:hover,
+button.ghost.success:focus {
   background-color: var(--success);
   color: var(--background);
   border-color: var(--background);
@@ -3563,7 +3500,8 @@ button.ghost.danger {
   border-color: var(--error);
 }
 
-button.ghost.danger:hover, button.ghost.danger:focus {
+button.ghost.danger:hover,
+button.ghost.danger:focus {
   background-color: var(--error);
   color: var(--background);
   border-color: var(--background);
@@ -3574,7 +3512,8 @@ button.ghost.warning {
   border-color: var(--warning);
 }
 
-button.ghost.warning:hover, button.ghost.warning:focus {
+button.ghost.warning:hover,
+button.ghost.warning:focus {
   background-color: var(--warning);
   color: var(--background);
   border-color: var(--background);
