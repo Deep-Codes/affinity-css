@@ -1,0 +1,51 @@
+$success: var(--success)
+$warning: var(--warning)
+$danger: var(--error)
+$accent_2: var(--accents_2)
+$foreground: var(--foreground)
+
+@mixin tag($color)
+  border: 1px solid $color
+  color: $color
+
+@mixin invert($color)
+  color: var(--background)
+  background-color: $color
+
+.af-tag
+  display: inline-block
+  line-height: 0.875rem
+  font-size: 0.875rem
+  height: 1.75rem
+  border-radius: $radius
+  border: 1px solid var(--foreground)
+  background-color: var(--background)
+  color: var(--foreground)
+  padding: 6px
+  box-sizing: border-box
+
+  &.success
+    @include tag($success)
+  &.warning
+    @include tag($warning)
+  &.danger
+    @include tag($danger)
+
+.af-tag-invert
+  display: inline-block
+  line-height: 0.875rem
+  font-size: 0.875rem
+  height: 1.75rem
+  border-radius: $radius
+  border: 1px solid var(--background)
+  background-color: var(--foreground)
+  color: var(--background)
+  padding: 6px
+  box-sizing: border-box
+
+  &.success
+    @include invert($success)
+  &.warning
+    @include invert($warning)
+  &.danger
+    @include invert($danger)

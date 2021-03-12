@@ -3717,3 +3717,59 @@ button.ghost.warning:hover, button.ghost.warning:focus {
 .note.error > .note-type, .note.danger > .note-type {
   color: var(--error);
 }
+
+.af-tag {
+  display: inline-block;
+  line-height: 0.875rem;
+  font-size: 0.875rem;
+  height: 1.75rem;
+  border-radius: 5px;
+  border: 1px solid var(--foreground);
+  background-color: var(--background);
+  color: var(--foreground);
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+.af-tag.success {
+  border: 1px solid var(--success);
+  color: var(--success);
+}
+
+.af-tag.warning {
+  border: 1px solid var(--warning);
+  color: var(--warning);
+}
+
+.af-tag.danger {
+  border: 1px solid var(--error);
+  color: var(--error);
+}
+
+.af-tag-invert {
+  display: inline-block;
+  line-height: 0.875rem;
+  font-size: 0.875rem;
+  height: 1.75rem;
+  border-radius: 5px;
+  border: 1px solid var(--background);
+  background-color: var(--foreground);
+  color: var(--background);
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+.af-tag-invert.success {
+  color: var(--background);
+  background-color: var(--success);
+}
+
+.af-tag-invert.warning {
+  color: var(--background);
+  background-color: var(--warning);
+}
+
+.af-tag-invert.danger {
+  color: var(--background);
+  background-color: var(--error);
+}

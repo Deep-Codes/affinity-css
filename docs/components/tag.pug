@@ -1,0 +1,27 @@
+.mt-10.mb-10
+  h3#tag.cyan-4 # Tags
+  p Tags
+  span.af-tag.mr-2 Basic 
+  span.af-tag.mr-2.success Success
+  span.af-tag.mr-2.warning Warning
+  span.af-tag.mr-2.danger Danger
+  p Invert Tags
+  span.af-tag-invert.mr-2 Invert
+  span.af-tag-invert.success.mr-2 Success
+  span.af-tag-invert.warning.mr-2 Warning
+  span.af-tag-invert.danger.mr-2 Danger
+  p use the #[code @mixin tag($color)] to create custom badges
+  details 
+    summary See Code 
+    .mt-5.mb-5 
+      :marked
+        ```html
+        <span class="af-tag">Basic</span>
+        <span class="af-tag success">Success</span>
+        <span class="af-tag warning">Warning</span>
+        <span class="af-tag danger">Danger</span>
+        <span class="af-tag-invert">Invert</span>
+        <span class="af-tag-invert success">Success</span>
+        <span class="af-tag-invert warning">Warning</span>
+        <span class="af-tag-invert danger">Danger</span>
+        ```
