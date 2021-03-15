@@ -1,14 +1,14 @@
 @charset "UTF-8";
 @import url("https://rsms.me/inter/inter.css");
 :root, :root[data-theme='theme-light'] {
-  --accents_1: #fafafa;
-  --accents_2: #eaeaea;
-  --accents_3: #999;
-  --accents_4: #888;
-  --accents_5: #666;
-  --accents_6: #444;
-  --accents_7: #333;
-  --accents_8: #111;
+  --accents1: #fafafa;
+  --accents2: #eaeaea;
+  --accents3: #999;
+  --accents4: #888;
+  --accents5: #666;
+  --accents6: #444;
+  --accents7: #333;
+  --accents8: #111;
   --background: #fff;
   --foreground: #000;
   --selection: #79ffe1;
@@ -42,14 +42,14 @@
 }
 
 :root[data-theme='theme-dark'] {
-  --accents_1: #111;
-  --accents_2: #333;
-  --accents_3: #444;
-  --accents_4: #666;
-  --accents_5: #888;
-  --accents_6: #999;
-  --accents_7: #eaeaea;
-  --accents_8: #fafafa;
+  --accents1: #111;
+  --accents2: #333;
+  --accents3: #444;
+  --accents4: #666;
+  --accents5: #888;
+  --accents6: #999;
+  --accents7: #eaeaea;
+  --accents8: #fafafa;
   --background: #000;
   --foreground: #fff;
   --selection: #f81ce5;
@@ -184,7 +184,7 @@ li {
 ul li:before {
   content: '–';
   display: inline-block;
-  color: var(--accents_4);
+  color: var(--accents4);
   position: absolute;
   margin-left: -0.9375rem;
 }
@@ -256,7 +256,7 @@ textarea:focus {
 
 pre {
   background-color: transparent;
-  border: 1px solid var(--accents_2);
+  border: 1px solid var(--accents2);
   border-radius: 5px;
   padding: calc(0.75 * 16pt) 16pt;
   margin: 16pt 0;
@@ -306,7 +306,7 @@ code:before, code:after {
 }
 
 hr {
-  border-color: var(--accents_2);
+  border-color: var(--accents2);
 }
 
 details {
@@ -377,8 +377,8 @@ details[open] > div {
 
 blockquote {
   padding: calc(0.667 * 16pt) 16pt;
-  color: var(--accents_5);
-  background-color: var(--accents_1);
+  color: var(--accents5);
+  background-color: var(--accents1);
   border-radius: 5px;
   margin: 1.5rem 0;
   border: 1px solid var(--border);
@@ -424,31 +424,31 @@ table th, table td {
 
 table th {
   height: 2.5rem;
-  color: var(--accents_5);
+  color: var(--accents5);
   font-size: 0.875rem;
   font-weight: 400;
   letter-spacing: 0;
-  background: var(--accents_1);
-  border-bottom: 1px solid var(--accents_2);
-  border-top: 1px solid var(--accents_2);
+  background: var(--accents1);
+  border-bottom: 1px solid var(--accents2);
+  border-top: 1px solid var(--accents2);
 }
 
 table th:nth-child(1) {
-  border-bottom: 1px solid var(--accents_2);
-  border-left: 1px solid var(--accents_2);
+  border-bottom: 1px solid var(--accents2);
+  border-left: 1px solid var(--accents2);
   border-radius: 4px 0 0 4px;
-  border-top: 1px solid var(--accents_2);
+  border-top: 1px solid var(--accents2);
 }
 
 table th:last-child {
-  border-bottom: 1px solid var(--accents_2);
+  border-bottom: 1px solid var(--accents2);
   border-radius: 0 4px 4px 0;
-  border-right: 1px solid var(--accents_2);
-  border-top: 1px solid var(--accents_2);
+  border-right: 1px solid var(--accents2);
+  border-top: 1px solid var(--accents2);
 }
 
 table tr td {
-  color: var(--accents_6);
+  color: var(--accents6);
   font-size: 0.875rem;
   height: 2.5rem;
 }
@@ -3116,7 +3116,7 @@ table td:nth-child(1) {
   width: 1.875rem;
   height: 1.875rem;
   border-radius: 50%;
-  border: 1px solid var(--accents_2);
+  border: 1px solid var(--accents2);
   vertical-align: top;
   background-color: var(--background);
 }
@@ -3213,9 +3213,9 @@ button {
   pointer-events: auto;
   box-shadow: none;
   background-position: center;
-  color: var(--accents_5);
+  color: var(--accents5);
   background-color: var(--background);
-  border: 1px solid var(--accents_2);
+  border: 1px solid var(--accents2);
 }
 
 button.mini {
@@ -3246,11 +3246,11 @@ button.big, button.huge, button.large {
 }
 
 button.shadow {
-  box-shadow: 0 3px 10px var(--accents_3);
+  box-shadow: 0 3px 10px var(--accents3);
 }
 
 button:not(.disabled):hover, button:not(.disabled):focus {
-  background: var(--accents_1) radial-gradient(circle, transparent 1%, var(--accents_1) 1%) center/15000%;
+  background: var(--accents1) radial-gradient(circle, transparent 1%, var(--accents1) 1%) center/15000%;
   color: var(--foreground);
   background-color: var(--background);
   border-color: var(--foreground);
@@ -3261,7 +3261,7 @@ button:not(.disabled):hover, button:not(.disabled):focus {
 }
 
 button:not(.disabled):not(.ghost):active {
-  background-color: var(--accents_2);
+  background-color: var(--accents2);
   background-size: 100%;
   transition: background 0s;
 }
@@ -3373,7 +3373,7 @@ button.ghost.warning:hover, button.ghost.warning:focus {
   padding: 8pt 16pt;
   font-size: 0.875rem;
   line-height: 1.8;
-  border: 1px solid var(--accents_2);
+  border: 1px solid var(--accents2);
   background-color: var(--background);
   border-radius: 5px;
 }
@@ -3483,17 +3483,17 @@ input {
   width: initial;
   outline: 0;
   box-sizing: border-box;
-  border: 1px solid var(--accents_2);
+  border: 1px solid var(--accents2);
   -webkit-appearance: none;
   transition: border 0.2s ease, color 0.2s ease;
 }
 
 input:focus {
-  border-color: var(--accents_5);
+  border-color: var(--accents5);
 }
 
 input.disabled {
-  background: var(--accents-1);
+  background: var(--accents1);
   cursor: not-allowed;
 }
 
@@ -3549,11 +3549,11 @@ input.danger {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--accents_1);
+  background-color: var(--accents1);
   border-radius: 5px;
-  border-bottom: 1px solid var(--accents_2);
-  border-top: 1px solid var(--accents_2);
-  color: var(--accents_6);
+  border-bottom: 1px solid var(--accents2);
+  border-top: 1px solid var(--accents2);
+  color: var(--accents6);
   font-size: 0.875rem;
   line-height: 1;
   width: initial;
@@ -3571,7 +3571,7 @@ input.danger {
 
 .input-group.suffix > .label.suffix {
   border-left: none;
-  border-right: 1px solid var(--accents_2);
+  border-right: 1px solid var(--accents2);
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -3583,7 +3583,7 @@ input.danger {
 
 .input-group.prefix > .label.prefix {
   border-right: none;
-  border-left: 1px solid var(--accents_2);
+  border-left: 1px solid var(--accents2);
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
@@ -3598,9 +3598,9 @@ select {
   background: none;
   outline: 0;
   box-sizing: border-box;
-  border: 1px solid var(--accents_2);
+  border: 1px solid var(--accents2);
   transition: border 0.2s ease, color 0.2s ease;
-  background-image: linear-gradient(45deg, transparent 50%, var(--accents_4) 50%), linear-gradient(135deg, var(--accents_4) 50%, transparent 50%);
+  background-image: linear-gradient(45deg, transparent 50%, var(--accents4) 50%), linear-gradient(135deg, var(--accents4) 50%, transparent 50%);
   background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
   background-size: 5px 5px,5px 5px,1px 1.5em;
   background-repeat: no-repeat;
@@ -3633,16 +3633,16 @@ textarea {
   padding: 8pt;
   border-radius: 5px;
   line-height: 1.685rem;
-  border: 1px solid var(--accents_2);
+  border: 1px solid var(--accents2);
   transition: border 0.2s ease, color 0.2s ease;
 }
 
-textarea:hover {
+textarea:not(.disabled):hover, textarea:not(.disabled):focus {
   border: 1px solid var(--foreground);
 }
 
 textarea.disabled {
-  background: var(--accents-1);
+  background: var(--accents1);
   cursor: not-allowed;
 }
 

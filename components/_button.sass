@@ -3,7 +3,6 @@ $warning: var(--warning)
 $danger: var(--error)
 $foreground: var(--foreground)
 $background: var(--background)
-$accent_1: var(--accents_1)
 
 @mixin primary($color)
   background-color: $color
@@ -47,9 +46,9 @@ button
   pointer-events: auto
   box-shadow: none
   background-position: center
-  color: var(--accents_5)
+  color: var(--accents5)
   background-color: var(--background)
-  border: 1px solid var(--accents_2)
+  border: 1px solid var(--accents2)
 
   &.mini
     height: 1.5rem
@@ -76,11 +75,11 @@ button
     font-size: 1rem
 
   &.shadow
-    box-shadow: 0 3px 10px var(--accents_3)
+    box-shadow: 0 3px 10px var(--accents3)
 
   &:not(.disabled):hover,
   &:not(.disabled):focus
-    background: var(--accents_1) radial-gradient(circle, transparent 1%, var(--accents_1) 1%) center/15000%
+    background: var(--accents1) radial-gradient(circle, transparent 1%, var(--accents1) 1%) center/15000%
     color: var(--foreground)
     background-color: var(--background)
     border-color: var(--foreground)
@@ -90,7 +89,7 @@ button
     transform: translate3d(0px, 0px, 0px)
 
   &:not(.disabled):not(.ghost):active
-    background-color: var(--accents_2)
+    background-color: var(--accents2)
     background-size: 100%
     transition: background 0s
 

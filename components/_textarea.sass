@@ -11,12 +11,13 @@ textarea
   // resize: none
   border-radius: $radius
   line-height: 1.685rem
-  border: 1px solid var(--accents_2)
+  border: 1px solid var(--accents2)
   transition: border 0.2s ease, color 0.2s ease
 
-  &:hover
+  &:not(.disabled):hover,
+  &:not(.disabled):focus
     border: 1px solid var(--foreground)
 
   &.disabled
-    background: var(--accents-1)
+    background: var(--accents1)
     cursor: not-allowed

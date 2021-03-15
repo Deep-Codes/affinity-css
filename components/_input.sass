@@ -1,7 +1,7 @@
 $success: var(--success)
 $warning: var(--warning)
 $danger: var(--error)
-$accent_2: var(--accents_2)
+$accent_2: var(--accents2)
 $foreground: var(--foreground)
 
 @mixin type($color)
@@ -21,15 +21,15 @@ input
   width: initial
   outline: 0
   box-sizing: border-box
-  border: 1px solid var(--accents_2)
+  border: 1px solid var(--accents2)
   -webkit-appearance: none
   transition: border 0.2s ease, color 0.2s ease
 
   &:focus
-    border-color: var(--accents_5)
+    border-color: var(--accents5)
 
   &.disabled
-    background: var(--accents-1)
+    background: var(--accents1)
     cursor: not-allowed
 
   &.mini
@@ -70,11 +70,11 @@ input
     display: inline-flex
     justify-content: center
     align-items: center
-    background-color: var(--accents_1)
+    background-color: var(--accents1)
     border-radius: $radius
-    border-bottom: 1px solid var(--accents_2)
-    border-top: 1px solid var(--accents_2)
-    color: var(--accents_6)
+    border-bottom: 1px solid var(--accents2)
+    border-top: 1px solid var(--accents2)
+    color: var(--accents6)
     font-size: 0.875rem
     line-height: 1
     width: initial
@@ -88,7 +88,7 @@ input
 
     >.label.suffix
       border-left: none
-      border-right: 1px solid var(--accents_2)
+      border-right: 1px solid var(--accents2)
       border-top-left-radius: 0
       border-bottom-left-radius: 0
 
@@ -99,6 +99,6 @@ input
 
     >.label.prefix
       border-right: none
-      border-left: 1px solid var(--accents_2)
+      border-left: 1px solid var(--accents2)
       border-top-right-radius: 0
       border-bottom-right-radius: 0
