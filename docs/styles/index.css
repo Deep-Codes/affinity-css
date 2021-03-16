@@ -3616,3 +3616,39 @@ textarea.disabled {
   background: var(--accents1);
   cursor: not-allowed;
 }
+
+.bold-1 {
+  font-weight: 100;
+}
+
+.bold-2 {
+  font-weight: 200;
+}
+
+.bold-3 {
+  font-weight: 300;
+}
+
+.bold-4 {
+  font-weight: 400;
+}
+
+.bold-5 {
+  font-weight: 500;
+}
+
+.bold-6 {
+  font-weight: 600;
+}
+
+.bold-7 {
+  font-weight: 700;
+}
+
+.bold-8 {
+  font-weight: 800;
+}
+
+.bold-9 {
+  font-weight: 900;
+}

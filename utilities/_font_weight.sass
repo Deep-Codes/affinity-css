@@ -1,0 +1,5 @@
+$fontWeight: ( "bold-1": 100,"bold-2": 200,"bold-3": 300, "bold-4": 400,"bold-5": 500,"bold-6": 600,"bold-7": 700,"bold-8": 800,"bold-9": 900)
+
+@each $name, $weight in $fontWeight
+  .#{$name}
+    font-weight: $weight
