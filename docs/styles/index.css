@@ -442,6 +442,16 @@ table td:nth-child(1) {
   margin: 0rem;
 }
 
+.mx-0 {
+  margin-left: 0rem;
+  margin-right: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
+}
+
+.my-0 {
+  margin-top: 0rem;
+  margin-bottom: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
+}
+
 .p-0 {
   padding: 0rem;
 }
@@ -480,6 +490,16 @@ table td:nth-child(1) {
 
 .m-1 {
   margin: 0.25rem;
+}
+
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
+}
+
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
 }
 
 .p-1 {
@@ -522,6 +542,16 @@ table td:nth-child(1) {
   margin: 0.5rem;
 }
 
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -560,6 +590,16 @@ table td:nth-child(1) {
 
 .m-3 {
   margin: 0.75rem;
+}
+
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
+}
+
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
 }
 
 .p-3 {
@@ -602,6 +642,16 @@ table td:nth-child(1) {
   margin: 1rem;
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -640,6 +690,16 @@ table td:nth-child(1) {
 
 .m-5 {
   margin: 1.25rem;
+}
+
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
 }
 
 .p-5 {
@@ -682,6 +742,16 @@ table td:nth-child(1) {
   margin: 1.5rem;
 }
 
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
+}
+
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
+}
+
 .p-6 {
   padding: 1.5rem;
 }
@@ -720,6 +790,16 @@ table td:nth-child(1) {
 
 .m-7 {
   margin: 1.75rem;
+}
+
+.mx-7 {
+  margin-left: 1.75rem;
+  margin-right: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
+}
+
+.my-7 {
+  margin-top: 1.75rem;
+  margin-bottom: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
 }
 
 .p-7 {
@@ -762,6 +842,16 @@ table td:nth-child(1) {
   margin: 2rem;
 }
 
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
+}
+
 .p-8 {
   padding: 2rem;
 }
@@ -800,6 +890,16 @@ table td:nth-child(1) {
 
 .m-9 {
   margin: 2.25rem;
+}
+
+.mx-9 {
+  margin-left: 2.25rem;
+  margin-right: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
+}
+
+.my-9 {
+  margin-top: 2.25rem;
+  margin-bottom: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
 }
 
 .p-9 {
@@ -842,6 +942,16 @@ table td:nth-child(1) {
   margin: 2.5rem;
 }
 
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
+}
+
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
+}
+
 .p-10 {
   padding: 2.5rem;
 }
@@ -880,6 +990,16 @@ table td:nth-child(1) {
 
 .m-11 {
   margin: 2.75rem;
+}
+
+.mx-11 {
+  margin-left: 2.75rem;
+  margin-right: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
+}
+
+.my-11 {
+  margin-top: 2.75rem;
+  margin-bottom: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
 }
 
 .p-11 {
@@ -922,6 +1042,16 @@ table td:nth-child(1) {
   margin: 3rem;
 }
 
+.mx-12 {
+  margin-left: 3rem;
+  margin-right: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
+}
+
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
+}
+
 .p-12 {
   padding: 3rem;
 }
@@ -960,6 +1090,16 @@ table td:nth-child(1) {
 
 .m-13 {
   margin: 3.25rem;
+}
+
+.mx-13 {
+  margin-left: 3.25rem;
+  margin-right: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
+}
+
+.my-13 {
+  margin-top: 3.25rem;
+  margin-bottom: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
 }
 
 .p-13 {
@@ -1002,6 +1142,16 @@ table td:nth-child(1) {
   margin: 3.5rem;
 }
 
+.mx-14 {
+  margin-left: 3.5rem;
+  margin-right: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
+}
+
+.my-14 {
+  margin-top: 3.5rem;
+  margin-bottom: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
+}
+
 .p-14 {
   padding: 3.5rem;
 }
@@ -1040,6 +1190,16 @@ table td:nth-child(1) {
 
 .m-15 {
   margin: 3.75rem;
+}
+
+.mx-15 {
+  margin-left: 3.75rem;
+  margin-right: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
+}
+
+.my-15 {
+  margin-top: 3.75rem;
+  margin-bottom: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
 }
 
 .p-15 {
@@ -1082,6 +1242,16 @@ table td:nth-child(1) {
   margin: 4rem;
 }
 
+.mx-16 {
+  margin-left: 4rem;
+  margin-right: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
+}
+
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
+}
+
 .p-16 {
   padding: 4rem;
 }
@@ -1120,6 +1290,16 @@ table td:nth-child(1) {
 
 .m-17 {
   margin: 4.25rem;
+}
+
+.mx-17 {
+  margin-left: 4.25rem;
+  margin-right: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
+}
+
+.my-17 {
+  margin-top: 4.25rem;
+  margin-bottom: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
 }
 
 .p-17 {
@@ -1162,6 +1342,16 @@ table td:nth-child(1) {
   margin: 4.5rem;
 }
 
+.mx-18 {
+  margin-left: 4.5rem;
+  margin-right: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
+}
+
+.my-18 {
+  margin-top: 4.5rem;
+  margin-bottom: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
+}
+
 .p-18 {
   padding: 4.5rem;
 }
@@ -1202,6 +1392,16 @@ table td:nth-child(1) {
   margin: 4.75rem;
 }
 
+.mx-19 {
+  margin-left: 4.75rem;
+  margin-right: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
+}
+
+.my-19 {
+  margin-top: 4.75rem;
+  margin-bottom: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
+}
+
 .p-19 {
   padding: 4.75rem;
 }
@@ -1240,6 +1440,16 @@ table td:nth-child(1) {
 
 .m-20 {
   margin: 5rem;
+}
+
+.mx-20 {
+  margin-left: 5rem;
+  margin-right: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
+}
+
+.my-20 {
+  margin-top: 5rem;
+  margin-bottom: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20/4rem;
 }
 
 .p-20 {
