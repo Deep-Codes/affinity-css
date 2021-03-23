@@ -10,8 +10,11 @@ html(lang='en')
 		link(rel='stylesheet' href='./styles/prism.css')
 	body.page
 		include templates/navbar
-		include templates/element-list
-		include container
+		.body
+			.elements-list
+				include templates/element-list
+			.elements-container
+				include container
 
 	script(src='./js/app.js')
 	script(src='./js/prism.js')
