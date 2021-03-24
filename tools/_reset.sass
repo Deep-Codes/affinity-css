@@ -197,50 +197,6 @@ code
 hr
   border-color: var(--accents2)
 
-details
-  border: none
-  padding-left: 5px
-  padding-top: 10px
-  padding-bottom: 10px
-  border-radius: 5px
-
-details:focus,
-details:hover,
-details:active
-  outline: none
-
-summary
-  cursor: pointer
-  user-select: none
-  font-weight: bold
-  // list-style: none
-  outline: none
-
-summary::-webkit-details-marker,
-summary::before
-  display: none
-
-summary::-moz-list-bullet
-  font-size: 0
-
-summary:focus,
-summary:hover,
-summary:active
-  outline: none
-  // list-style: none
-
-details[open] > div
-  animation: fade-in 0.5s forwards
-
-@keyframes fade-in
-  0%
-    transform: translateY(-20px)
-    opacity: 0
-
-  100%
-    transform: translateY(0)
-    opacity: 1
-
 blockquote
   padding: calc(0.667 * #{$gap}) $gap
   color: var(--accents5)

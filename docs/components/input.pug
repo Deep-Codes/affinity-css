@@ -1,12 +1,12 @@
-.mt-10.mb-10
+.mt-1.mb-1
   h3#input # Inputs
   p Simple Input
-  input.mr-2(value='Basic Input')
-  input.disabled(value='Disabled Input', disabled='true')
+  input.mr-2.mb-2(value='Basic Input')
+  input.disabled.mb-2(value='Disabled Input', disabled='true')
   p Different States
-  input.success.mr-2(value='Success Input')
-  input.warning.mr-2(value='Warning Input')
-  input.danger.mr-2(value='Error Name')
+  input.success.mr-2.mb-2(value='Success Input')
+  input.warning.mr-2.mb-2(value='Warning Input')
+  input.danger.mr-2.mb-2(value='Error Name')
   p Different Sizes 
   input.mini.mb-2(value='Mini Input')
   br
@@ -26,32 +26,29 @@
   div.input-group.suffix
     input(value='Enter Name')
     span.label.suffix Company
-  details.mt-5 
-    summary See Code 
-    .mt-5.mb-5 
-      :marked
-        ```html
-        <input />
-        <input class="disabled" />
+  :marked
+    ```html
+    <input />
+    <input class="disabled" />
 
-        <input class="success" />
-        <input class="warning" />
-        <input class="danger" />
+    <input class="success" />
+    <input class="warning" />
+    <input class="danger" />
 
-        <input class="mini" />
-        <input class="small" />
-        <input />
-        <input class="large" />
-        
-        <input class="full-width" />
+    <input class="mini" />
+    <input class="small" />
+    <input />
+    <input class="large" />
+    
+    <input class="full-width" />
 
-        <div class="input-group prefix">
-          <span class="label prefix">Company</span>
-          <input />
-        </div>
-        
-        <div class="input-group suffix">
-          <input />
-          <span class="label suffix">Company</span>
-        </div>
-        ```
+    <div class="input-group prefix">
+      <span class="label prefix">Company</span>
+      <input />
+    </div>
+    
+    <div class="input-group suffix">
+      <input />
+      <span class="label suffix">Company</span>
+    </div>
+    ```

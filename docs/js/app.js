@@ -2,8 +2,9 @@ const html = document.querySelector('html');
 const logo = document.querySelector('#logo');
 const navList = document.querySelector('#nav-list');
 const themeIcon = document.querySelector('#theme-icon');
-html.dataset.theme = `theme-light`;
-let isDark = false;
+html.dataset.theme = `theme-dark`;
+logo.style.fill = 'white';
+let isDark = true;
 function switchTheme() {
   isDark = !isDark;
   if (isDark) {

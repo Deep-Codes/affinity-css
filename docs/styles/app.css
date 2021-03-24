@@ -6,14 +6,12 @@ nav {
   position: sticky;
   overflow: hidden;
   top: 0;
-  min-width: 100px;
   width: 100%;
   display: flex;
   padding: 20px 10px;
-  margin: 10px 10px;
-  margin-top: 0px;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
 }
 .page {
   max-width: 800px;
@@ -25,6 +23,13 @@ nav {
 }
 .elements-list {
   position: fixed;
+  width: 120px;
+  overflow-y: scroll;
+  padding-left: 10px;
+}
+.elements-list ul,
+li {
+  margin: 0px;
 }
 .elements-list p {
   cursor: pointer;
@@ -35,13 +40,22 @@ nav {
   border-bottom: 1px solid var(--foreground);
 }
 .elements-container {
+  width: 620px;
   display: flex;
   flex-direction: column;
   margin-left: 180px;
 }
 
 @media screen and (max-width: 800px) {
-  .page {
-    padding: 0px 10px;
+  .elements-list {
+    display: none;
+  }
+  nav {
+    width: 100%;
+  }
+  .elements-container {
+    padding-left: 15px;
+    margin-left: 0px;
+    width: 100%;
   }
 }

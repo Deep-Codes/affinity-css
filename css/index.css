@@ -309,72 +309,6 @@ hr {
   border-color: var(--accents2);
 }
 
-details {
-  border: none;
-  padding-left: 5px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 5px;
-}
-
-details:focus,
-details:hover,
-details:active {
-  outline: none;
-}
-
-summary {
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  font-weight: bold;
-  outline: none;
-}
-
-summary::-webkit-details-marker,
-summary::before {
-  display: none;
-}
-
-summary::-moz-list-bullet {
-  font-size: 0;
-}
-
-summary:focus,
-summary:hover,
-summary:active {
-  outline: none;
-}
-
-details[open] > div {
-  -webkit-animation: fade-in 0.5s forwards;
-          animation: fade-in 0.5s forwards;
-}
-
-@-webkit-keyframes fade-in {
-  0% {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes fade-in {
-  0% {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 blockquote {
   padding: calc(0.667 * 16pt) 16pt;
   color: var(--accents5);
@@ -3691,7 +3625,6 @@ button.disabled {
 }
 
 button.primary {
-  color: var(--background);
   background-color: var(--foreground);
   color: var(--background);
   border-color: var(--foreground);
@@ -4046,11 +3979,11 @@ textarea {
   box-shadow: none;
   display: block;
   font-size: 0.875rem;
-  width: 100%;
-  height: 100%;
+  width: 95%;
   min-height: 6.25rem;
   outline: none;
   padding: 8pt;
+  resize: none;
   border-radius: 5px;
   line-height: 1.685rem;
   border: 1px solid var(--accents2);
