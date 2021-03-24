@@ -6,7 +6,8 @@ nav {
   position: sticky;
   overflow: hidden;
   top: 0;
-  width: 100%;
+  left: 0;
+  max-width: inherit;
   display: flex;
   padding: 20px 10px;
   justify-content: space-between;
@@ -44,14 +45,12 @@ li {
   display: flex;
   flex-direction: column;
   margin-left: 180px;
+  padding-right: 10px;
 }
 
 @media screen and (max-width: 800px) {
   .elements-list {
     display: none;
-  }
-  nav {
-    width: 100%;
   }
   .elements-container {
     padding-left: 15px;

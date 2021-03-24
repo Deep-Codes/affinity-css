@@ -3618,6 +3618,11 @@ button.disabled {
   cursor: not-allowed;
 }
 
+button.auto {
+  width: auto;
+  min-width: min-content;
+}
+
 button.primary {
   background-color: var(--foreground);
   color: var(--background);
@@ -3965,7 +3970,7 @@ textarea {
   box-shadow: none;
   display: block;
   font-size: 0.875rem;
-  width: 95%;
+  max-width: 95%;
   min-height: 6.25rem;
   outline: none;
   padding: 8pt;
