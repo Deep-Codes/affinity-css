@@ -25,6 +25,7 @@ nav {
 .elements-list {
   position: fixed;
   width: 120px;
+  height: calc(100vh - 80px);
   overflow-y: scroll;
   padding-left: 10px;
 }
@@ -39,6 +40,9 @@ li {
 }
 .elements-list p:hover {
   border-bottom: 1px solid var(--foreground);
+}
+.no-underline:hover {
+  border-bottom: none;
 }
 .elements-container {
   width: 620px;

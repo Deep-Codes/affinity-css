@@ -1,0 +1,19 @@
+.mt-1.mb-1
+  h3#theme # Theming
+  p #[code affinity-css] supports Light/Dark Theme.
+  p Add the Attribute #[code data-theme : theme-dark] for Dark Mode.
+  p Add this script for toggling.
+  :marked
+    ```js
+    const html = document.querySelector('html');
+    html.dataset.theme = `theme-dark`;
+    let isDark = true;
+    function switchTheme() {
+      isDark = !isDark;
+      if (isDark) {
+        html.dataset.theme = `theme-dark`;
+      } else {
+        html.dataset.theme = `theme-light`;
+      }
+    }
+    ```
