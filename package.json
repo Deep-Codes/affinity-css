@@ -1,14 +1,19 @@
 {
-  "name": "@deep-codes/affinity-css",
-  "version": "v0.0.1-alpha",
+  "name": "affinity-css",
+  "version": "v0.0.0-alpha",
   "description": "🏖 Minimal CSS Framework based on Vercel's Design System",
   "main": "index.sass",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@Deep-Codes"
-  },
-  "repository": "https://github.com/Deep-Codes/affinity-css-dev",
+  "repository": "https://github.com/Deep-Codes/affinity-css",
   "author": "Deepankar Bhade",
   "license": "MIT",
+  "keywords": [
+    "css",
+    "sass",
+    "css library",
+    "tailwindcss",
+    "vercel",
+    "components"
+  ],
   "scripts": {
     "build-dev": "node-sass --output-style expanded src/index.sass ./docs/styles/index.css",
     "build": "rm -rf && yarn build-sass",
@@ -21,6 +26,7 @@
     "publish-docs": "gh-pages -d build"
   },
   "files": [
+    "media",
     "css"
   ],
   "devDependencies": {
