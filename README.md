@@ -9,6 +9,12 @@ Affinity-CSS is an Under Developing , very Opiniated CSS Library which uses most
 
 ### Installation
 
+`npm i affinity-css`
+
+or
+
+`yarn add affinity-css`
+
 Working on CI for Github Package and Npm
 (Help Needed) 😭
 
