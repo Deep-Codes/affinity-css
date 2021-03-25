@@ -1,6 +1,9 @@
 * {
   scroll-behavior: smooth;
 }
+.cursor {
+  cursor: pointer;
+}
 nav {
   backdrop-filter: saturate(180%) blur(5px);
   position: sticky;

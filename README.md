@@ -15,6 +15,14 @@ or
 
 `yarn add affinity-css`
 
+via CDN
+
+https://cdn.jsdelivr.net/npm/affinity-css@latest/css/index.css
+
+Minified:
+
+https://cdn.jsdelivr.net/npm/affinity-css@latest/css/index.min.css
+
 Working on CI for Github Package and Npm
 (Help Needed) 😭
 
