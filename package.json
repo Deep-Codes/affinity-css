@@ -1,6 +1,6 @@
 {
   "name": "@deep-codes/affinity-css",
-  "version": "0.0.1-alpha",
+  "version": "v0.0.0-alpha",
   "description": "Minimal CSS Framework based on Vercel's Design System",
   "main": "index.sass",
   "publishConfig": {
