@@ -16,15 +16,15 @@ Docs : https://deep-codes.github.io/affinity-css-dev/
 
 ### Scripts
 
-`build-dev` : compiles sass for docs
-`build` : compiles sass for production
-`build-sass` : sass -> autoprefixing
-`build-autoprefix` : css autoprefixing
-`build-cleancss` : minify css
-`server` : start snowpack server
-`dev` : compiles sass and run docs
-`build-docs` : build docs
-`publish-docs` : publish the docs to gh-pages
+- `build-dev` : compiles sass for docs
+- `build` : compiles sass for production
+- `build-sass` : sass -> autoprefixing
+- `build-autoprefix` : css autoprefixing
+- `build-cleancss` : minify css
+- `server` : start snowpack server
+- `dev` : compiles sass and run docs
+- `build-docs` : build docs
+- `publish-docs` : publish the docs to gh-pages
 
 ### Note
 
