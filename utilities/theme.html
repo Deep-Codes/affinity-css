@@ -1,0 +1,13 @@
+<div class="mt-1 mb-1"><h3 id="theme"># Theming</h3><p><code>affinity-css</code> supports Light/Dark Theme.</p><p>Add the Attribute <code>data-theme : theme-dark</code> for Dark Mode.</p><p>Add this script for toggling.</p><pre><code class="lang-js">const html = document.querySelector(&#39;html&#39;);
+html.dataset.theme = `theme-dark`;
+let isDark = true;
+function switchTheme() {
+  isDark = !isDark;
+  if (isDark) {
+    html.dataset.theme = `theme-dark`;
+  } else {
+    html.dataset.theme = `theme-light`;
+  }
+}
+</code></pre>
+</div>

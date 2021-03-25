@@ -1,0 +1,48 @@
+{
+  "inputs": {
+    "styles/index.css": {
+      "bytes": 49829,
+      "imports": []
+    },
+    "styles/app.css": {
+      "bytes": 1105,
+      "imports": []
+    },
+    "styles/prism.css": {
+      "bytes": 1177,
+      "imports": []
+    }
+  },
+  "outputs": {
+    "../~~bundle~~/styles/index.css": {
+      "imports": [],
+      "entryPoint": "styles/index.css",
+      "inputs": {
+        "styles/index.css": {
+          "bytesInOutput": 39568
+        }
+      },
+      "bytes": 39627
+    },
+    "../~~bundle~~/styles/app.css": {
+      "imports": [],
+      "entryPoint": "styles/app.css",
+      "inputs": {
+        "styles/app.css": {
+          "bytesInOutput": 884
+        }
+      },
+      "bytes": 885
+    },
+    "../~~bundle~~/styles/prism.css": {
+      "imports": [],
+      "entryPoint": "styles/prism.css",
+      "inputs": {
+        "styles/prism.css": {
+          "bytesInOutput": 890
+        }
+      },
+      "bytes": 891
+    }
+  }
+}

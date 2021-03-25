@@ -1,0 +1,206 @@
+<h3 class="mt-3" id="intro"># Introduction</h3><h1 class="mt-6 mb-6">Affinity CSS</h1><ul class="mb-5"> <li class="bold-6">Based on Vercel's Design System</li><li class="bold-6">Some Tailwind's Utility Classes</li><li class="bold-6">Flex Layout Implementation</li><li class="bold-6">Sass / Scss mixins for Custom</li><li class="bold-6">Light / Dark Built-In</li><li class="bold-6">Under-Development</li></ul><p class="bold-6">Installation via <code>yarn or npm</code></p><pre><code class="lang-bash">yarn add affinity-css
+# or 
+npm i affinity-css
+</code></pre>
+<p class="bold-6">Use via <code>cdn</code></p><pre><code class="lang-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/affinity-css@latest/css/index.css&quot;&gt;
+</code></pre>
+<p>Minified Version</p><pre><code class="lang-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/affinity-css@latest/css/index.min.css&quot;&gt;
+</code></pre>
+<div class="mt-1 mb-1"><h3 id="theme"># Theming</h3><p><code>affinity-css</code> supports Light/Dark Theme.</p><p>Add the Attribute <code>data-theme : theme-dark</code> for Dark Mode.</p><p>Add this script for toggling.</p><pre><code class="lang-js">const html = document.querySelector(&#39;html&#39;);
+html.dataset.theme = `theme-dark`;
+let isDark = true;
+function switchTheme() {
+  isDark = !isDark;
+  if (isDark) {
+    html.dataset.theme = `theme-dark`;
+  } else {
+    html.dataset.theme = `theme-light`;
+  }
+}
+</code></pre>
+</div><div class="mt-1 mb-1"><h3 id="color"># Colors</h3><p>Contains All Valid <b>Tailwind CSS</b> Utility Classes.</p><p>Examples :</p><p class="mt-1 orange-4">Tailwind Orange-4</p><p class="mt-1 purple-4">Tailwind Purple-4</p><p class="mt-1 red-4">Tailwind Red-4</p><p class="mt-1 lightBlue-4">Tailwind LightBlue-4</p><p class="mt-1 indigo-4">Tailwind Indigo-4</p><p class="mt-1 teal-4">Tailwind Teal-4</p><div class="p-2 mb-4 bg-lime-4">Lime Background</div><div class="p-2 mb-4 bg-cyan-4">Cyan Background</div><div class="p-2 mb-4 bg-indigo-4">Indigo Background</div><div class="p-2 mb-4 bg-pink-4">Pink Background</div><pre><code class="lang-html">&lt;p class=&quot;orange-4&quot;&gt;Tailwind Orange-4&lt;/p&gt;
+&lt;p class=&quot;purple-4&quot;&gt;Tailwind Purple-4&lt;/p&gt;
+&lt;p class=&quot;red-4&quot;&gt;Tailwind Red-4&lt;/p&gt;
+&lt;p class=&quot;lightBlue-4&quot;&gt;Tailwind LightBlue-4&lt;/p&gt;
+&lt;p class=&quot;indigo-4&quot;&gt;Tailwind Indigo-4&lt;/p&gt;
+&lt;p class=&quot;teal-4&quot;&gt;Tailwind Teal-4&lt;/p&gt;
+&lt;div class=&quot;bg-lime-4&quot;&gt;Lime Background&lt;/div&gt;
+&lt;div class=&quot;bg-cyan-4&quot;&gt;Cyan Background&lt;/div&gt;
+&lt;div class=&quot;bg-indigo-4&quot;&gt;Indigo Background&lt;/div&gt;
+&lt;div class=&quot;bg-pink-4&quot;&gt;Pink Background&lt;/div&gt;
+</code></pre>
+</div><div class="mt-1 mb-1"><h3 id="font-size"># Utility Font-Sizes</h3><p class="t-xs">Hello World</p><p class="t-sm">Hello World</p><p class="t-base">Hello World</p><p class="t-lg">Hello World</p><p class="t-xl">Hello World</p><pre><code class="lang-html">&lt;p class=&#39;t-xs&#39;&gt;Hello World&lt;/p&gt;
+&lt;p class=&#39;t-sm&#39;&gt;Hello World&lt;/p&gt;
+&lt;p class=&#39;t-base&#39;&gt;Hello World&lt;/p&gt;
+&lt;p class=&#39;t-lg&#39;&gt;Hello World&lt;/p&gt;
+&lt;p class=&#39;t-xl&#39;&gt;Hello World&lt;/p&gt;
+&lt;p class=&#39;t-2xl&#39;&gt;Hello World&lt;/p&gt;
+&lt;p class=&#39;t-3xl&#39;&gt;Hello World&lt;/p&gt;
+&lt;p class=&#39;t-4xl&#39;&gt;Hello World&lt;/p&gt;
+&lt;p class=&#39;t-5xl&#39;&gt;Hello World&lt;/p&gt;
+&lt;p class=&#39;t-6xl&#39;&gt;Hello World&lt;/p&gt;
+&lt;p class=&#39;t-7xl&#39;&gt;Hello World&lt;/p&gt;
+&lt;p class=&#39;t-8xl&#39;&gt;Hello World&lt;/p&gt;
+&lt;p class=&#39;t-9xl&#39;&gt;Hello World&lt;/p&gt;
+</code></pre>
+</div><div class="mt-1 mb-1"><h3 id="font-weight"># Utility Font-Weight</h3><p class="bold-1">Hello World</p><p class="bold-2">Hello World</p><p class="bold-3">Hello World</p><p class="bold-4">Hello World</p><p class="bold-5">Hello World</p><p class="bold-6">Hello World</p><p class="bold-7">Hello World</p><p class="bold-8">Hello World</p><p class="bold-9">Hello World</p><pre><code class="lang-html">&lt;p class=&#39;bold-1&#39;&gt;Hello World&lt;/p&gt;
+&lt;p class=&#39;bold-2&#39;&gt;Hello World&lt;/p&gt;
+&lt;p class=&#39;bold-3&#39;&gt;Hello World&lt;/p&gt;
+&lt;p class=&#39;bold-4&#39;&gt;Hello World&lt;/p&gt;
+&lt;p class=&#39;bold-5&#39;&gt;Hello World&lt;/p&gt;
+&lt;p class=&#39;bold-6&#39;&gt;Hello World&lt;/p&gt;
+&lt;p class=&#39;bold-7&#39;&gt;Hello World&lt;/p&gt;
+&lt;p class=&#39;bold-8&#39;&gt;Hello World&lt;/p&gt;
+&lt;p class=&#39;bold-9&#39;&gt;Hello World&lt;/p&gt;
+</code></pre>
+</div><div class="mt-1 mb-1"><h3 id="padding"># Paddings</h3><p>Contains All Valid <b>Tailwind CSS</b> Utility Classes.</p><p>Examples :</p><p class="mt-1"><code>p-2 : for padding all sides</code></p><p class="mt-1"><code>px-2 : for padding x-direction</code></p><p class="mt-1"><code>py-2 : for padding y-direction</code></p><p class="mt-1"><code>pl-2 : for padding-left</code></p><p class="mt-1"><code>pr-2 : for padding-right</code></p><p class="mt-1"><code>pt-2 : for padding-top</code></p><p class="mt-1"><code>pb-2 : for padding-bottom</code></p><p class="my-2"><code>Values 1-20 where 1 = 0.25rem.</code></p></div><div class="mt-1 mb-1"><h3 id="margin"># Margins</h3><p>Contains All Valid <b>Tailwind CSS</b> Utility Classes.</p><p>Examples :</p><p class="mt-1"><code>m-2 : for margin all sides</code></p><p class="mt-1"><code>mx-2 : for margin x-direction</code></p><p class="mt-1"><code>my-2 : for margin y-direction</code></p><p class="mt-1"><code>ml-2 : for margin-left</code></p><p class="mt-1"><code>mr-2 : for margin-right</code></p><p class="mt-1"><code>mt-2 : for margin-top</code></p><p class="mt-1"><code>mb-2 : for margin-bottom</code></p><p class="my-2"><code>Values 1-20 where 1 = 0.25rem.</code></p></div><div class="mt-3 mb-1"><h3 id="avatar"># Avatar</h3><div class="mt-5 mb-5"><img class="avatar small" src="https://vercel.com/api/www/avatar/?u=evilrabbit&amp;s=180"/><img class="avatar" src="https://vercel.com/api/www/avatar/?u=evilrabbit&amp;s=180"/><img class="avatar medium" src="https://vercel.com/api/www/avatar/?u=evilrabbit&amp;s=180"/><img class="avatar large" src="https://vercel.com/api/www/avatar/?u=evilrabbit&amp;s=180"/><div class="mt-5 mb-5"> <pre><code class="lang-html">&lt;img class=&#39;avatar small&#39; src=&#39;...&#39; /&gt;
+&lt;img class=&#39;avatar&#39; src=&#39;...&#39; /&gt;
+&lt;img class=&#39;avatar medium&#39; src=&#39;...&#39; /&gt;
+&lt;img class=&#39;avatar large&#39; src=&#39;...&#39; /&gt;
+</code></pre>
+</div></div></div><div class="mt-1 mb-1"><h3 id="badge"># Badges</h3><div class="mt-5 mb-5"><span class="badge mr-1 mt-2">tag </span><span class="badge mr-1 mt-2">HELLO</span><span class="badge mr-1 mt-2">1</span><span class="badge success mr-1 mt-2">success</span><span class="badge error mr-1 mt-2">error</span><span class="badge warning mr-1 mt-2">warning</span><span class="badge green mr-1 mt-2">green</span><span class="badge cyan mr-1 mt-2">cyan</span><span class="badge pink mr-1 mt-2">pink</span><p>use the <code>@mixin custom-badge($color)</code> to create custom badges</p><pre><code class="lang-html">&lt;span class=&quot;badge&quot;&gt;tag&lt;/span&gt;
+&lt;span class=&quot;badge&quot;&gt;HELLO&lt;/span&gt;
+&lt;span class=&quot;badge&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;badge success&quot;&gt;success&lt;/span&gt;
+&lt;span class=&quot;badge error&quot;&gt;error&lt;/span&gt;
+&lt;span class=&quot;badge warning&quot;&gt;warning&lt;/span&gt;
+&lt;span class=&quot;badge green&quot;&gt;green&lt;/span&gt;
+&lt;span class=&quot;badge cyan&quot;&gt;cyan&lt;/span&gt;
+&lt;span class=&quot;badge pink&quot;&gt;pink&lt;/span&gt;
+</code></pre>
+</div></div><div class="mt-1 mb-1"><h3 id="button"># Buttons</h3><div class="mt-5 mb-5"><p>Default Button</p><button>Click Me</button><p>Auto Button</p><button class="auto">Auto</button><p>Disabled Button</p><button class="disabled">Disabled Button</button><p>Primary Button</p><button class="primary mr-2 mb-4">Primary </button><button class="primary success mr-2 mb-4"> Success</button><button class="primary warning mr-2 mb-4"> Warning</button><button class="primary danger mr-2 mb-4"> Danger</button><p>Ghost Buttons</p><button class="ghost mr-2 mb-4">Ghost </button><button class="ghost success mr-2 mb-4">Success </button><button class="ghost warning mr-2 mb-4">Warning </button><button class="ghost danger mr-2 mb-4">Danger </button><p>Button Sizes </p><button class="primary mini mb-2">Mini</button><br/><button class="primary small mb-2">Small</button><br/><button class="primary mb-2">Default</button><br/><button class="primary large mb-2">Large</button><p>Shadow Button </p><button class="ghost shadow">Shadow</button><pre><code class="lang-html">&lt;button&gt;Click Me&lt;/button&gt;
+&lt;button class=&quot;disabled&quot;&gt;Disabled Button&lt;/button&gt;
+&lt;button class=&quot;primary&quot;&gt;Primary &lt;/button&gt;
+&lt;button class=&quot;primary success&quot;&gt; Success&lt;/button&gt;
+&lt;button class=&quot;primary warning&quot;&gt; Warning&lt;/button&gt;
+&lt;button class=&quot;primary danger&quot;&gt; Danger&lt;/button&gt;
+&lt;button class=&quot;ghost&quot;&gt;Ghost &lt;/button&gt;
+&lt;button class=&quot;ghost success&quot;&gt;Success &lt;/button&gt;
+&lt;button class=&quot;ghost warning&quot;&gt;Warning &lt;/button&gt;
+&lt;button class=&quot;ghost danger&quot;&gt;Danger &lt;/button&gt;
+&lt;button class=&quot;primary mini&quot;&gt;Mini&lt;/button&gt;
+&lt;button class=&quot;primary small&quot;&gt;Small&lt;/button&gt;
+&lt;button class=&quot;primary&quot;&gt;Default&lt;/button&gt;
+&lt;button class=&quot;primary large&quot;&gt;Large&lt;/button&gt;
+&lt;button class=&quot;ghost shadow&quot;&gt;Large&lt;/button&gt;
+</code></pre>
+</div></div><div class="mt-1 mb-1"><h3 id="code"># Code</h3><p> <code>yarn</code></p><pre class="language-bash"> <code class="language-bash">yarn add @affinity-css</code></pre><pre class="language-js"> <code class="language-js">console.log(`Hello World`)</code></pre><pre><code class="lang-html">&lt;p&gt;
+  &lt;code&gt;yarn&lt;/code&gt;
+&lt;/p&gt;
+
+&lt;pre class=&#39;language-bash&#39;&gt;
+  &lt;code class=&#39;language-bash&#39;&gt;
+    yarn add @affinity-css
+  &lt;/code&gt;
+&lt;/code&gt;
+
+&lt;pre class=&#39;language-js&#39;&gt;
+  &lt;code class=&#39;language-js&#39;&gt;
+    console.log(`Hello World`)
+  &lt;/code&gt;
+&lt;/code&gt;
+</code></pre>
+</div><div class="mt-1 mb-1"><h3 id="header"># Headers <h1>The Best of Both Worlds</h1><h2>The Best of Both Worlds</h2><h3>The Best of Both Worlds</h3><h4>The Best of Both Worlds</h4><h5>The Best of Both Worlds</h5><h6>The Best of Both Worlds</h6><pre><code class="lang-html">&lt;h1&gt;The Best of Both Worlds&lt;/h1&gt;
+&lt;h2&gt;The Best of Both Worlds&lt;/h2&gt;
+&lt;h3&gt;The Best of Both Worlds&lt;/h3&gt;
+&lt;h4&gt;The Best of Both Worlds&lt;/h4&gt;
+&lt;h5&gt;The Best of Both Worlds&lt;/h5&gt;
+&lt;h6&gt;The Best of Both Worlds&lt;/h6&gt;
+</code></pre>
+</h3></div><div class="mt-1 mb-1"><h3 id="input"># Inputs</h3><p>Simple Input</p><input class="mr-2 mb-2" value="Basic Input"/><input class="disabled mb-2" value="Disabled Input" disabled="true"/><p>Different States</p><input class="success mr-2 mb-2" value="Success Input"/><input class="warning mr-2 mb-2" value="Warning Input"/><input class="danger mr-2 mb-2" value="Error Name"/><p>Different Sizes </p><input class="mini mb-2" value="Mini Input"/><br/><input class="small mb-2" value="Small Input"/><br/><input class="mb-2" value="Default Input"/><br/><input class="large mb-2" value="Large Input"/><br/><p>Input with Full Width</p><input class="full-width" value="Full Width Input"/><p>Input with Label </p><div class="input-group prefix mb-4"><span class="label prefix">Company</span><input value="Enter Name"/></div><br/><div class="input-group suffix"><input value="Enter Name"/><span class="label suffix">Company</span></div><pre><code class="lang-html">&lt;input /&gt;
+&lt;input class=&quot;disabled&quot; /&gt;
+
+&lt;input class=&quot;success&quot; /&gt;
+&lt;input class=&quot;warning&quot; /&gt;
+&lt;input class=&quot;danger&quot; /&gt;
+
+&lt;input class=&quot;mini&quot; /&gt;
+&lt;input class=&quot;small&quot; /&gt;
+&lt;input /&gt;
+&lt;input class=&quot;large&quot; /&gt;
+
+&lt;input class=&quot;full-width&quot; /&gt;
+
+&lt;div class=&quot;input-group prefix&quot;&gt;
+  &lt;span class=&quot;label prefix&quot;&gt;Company&lt;/span&gt;
+  &lt;input /&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;input-group suffix&quot;&gt;
+  &lt;input /&gt;
+  &lt;span class=&quot;label suffix&quot;&gt;Company&lt;/span&gt;
+&lt;/div&gt;
+</code></pre>
+</div><div class="mt-1 mb-1"><h3 id="list"># Lists</h3><ol><li>Apple </li><li>Mango </li><li>Banana</li></ol><ul> <li>Dog </li><li>Cat </li><li>Bird</li></ul><pre><code class="lang-html">&lt;ol&gt;
+  &lt;li&gt;Apple&lt;/li&gt;
+  &lt;li&gt;Mango&lt;/li&gt;
+  &lt;li&gt;Banana&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+  &lt;li&gt;Dog&lt;/li&gt;
+  &lt;li&gt;Cat&lt;/li&gt;
+  &lt;li&gt;Bird&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+</div><div class="mt-1 mb-1"><h3 id="note"># Notes</h3><p class="note"><span class="note-type">Note :</span> Example of Note</p><p class="note success"><span class="note-type">Success :</span> Example of Success Note</p><p class="note warning"><span class="note-type">Warning :</span> Example of Warning Note</p><p class="note danger"><span class="note-type">Error :</span> Example of Danger Note</p><pre><code class="lang-html">&lt;p class=&quot;note&quot;&gt;&lt;span class=&quot;note-type&quot;&gt;Note :&lt;/span&gt; Example of Note&lt;/p&gt;
+&lt;p class=&quot;note success&quot;&gt;&lt;span class=&quot;note-type&quot;&gt;Success :&lt;/span&gt; Example of Success Note&lt;/p&gt;
+&lt;p class=&quot;note warning&quot;&gt;&lt;span class=&quot;note-type&quot;&gt;Warning :&lt;/span&gt; Example of Warning Note&lt;/p&gt;
+&lt;p class=&quot;note error&quot;&gt;&lt;span class=&quot;note-type&quot;&gt;Error :&lt;/span&gt; Example of Error Note&lt;/p&gt;
+</code></pre>
+</div><div class="mt-1 mb-1"><h3 id="select"># Selector</h3><p>Basic Select</p><select><option>Dog </option><option>Cat</option></select><p>Disabled Select </p><select class="disabled" disabled="true"><option>Dog </option><option>Cat</option></select><pre><code class="lang-html">&lt;select&gt;
+  &lt;option&gt;Dog&lt;/option&gt;
+  &lt;option&gt;Cat&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;select class=&#39;disabled&#39;&gt;
+  &lt;option&gt;Dog&lt;/option&gt;
+  &lt;option&gt;Cat&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+</div><div class="mt-1 mb-1"><h3 id="tag"># Tags</h3><p>Tags</p><span class="af-tag mr-2">Basic </span><span class="af-tag mr-2 success">Success</span><span class="af-tag mr-2 warning">Warning</span><span class="af-tag mr-2 danger">Danger</span><p>Invert Tags</p><span class="af-tag-invert mr-2">Invert</span><span class="af-tag-invert success mr-2">Success</span><span class="af-tag-invert warning mr-2">Warning</span><span class="af-tag-invert danger mr-2">Danger</span><p>use the <code>@mixin tag($color)</code> to create custom badges</p><pre><code class="lang-html">&lt;span class=&quot;af-tag&quot;&gt;Basic&lt;/span&gt;
+&lt;span class=&quot;af-tag success&quot;&gt;Success&lt;/span&gt;
+&lt;span class=&quot;af-tag warning&quot;&gt;Warning&lt;/span&gt;
+&lt;span class=&quot;af-tag danger&quot;&gt;Danger&lt;/span&gt;
+&lt;span class=&quot;af-tag-invert&quot;&gt;Invert&lt;/span&gt;
+&lt;span class=&quot;af-tag-invert success&quot;&gt;Success&lt;/span&gt;
+&lt;span class=&quot;af-tag-invert warning&quot;&gt;Warning&lt;/span&gt;
+&lt;span class=&quot;af-tag-invert danger&quot;&gt;Danger&lt;/span&gt;
+</code></pre>
+</div><div class="mt-1 mb-1"><h3 class="mb-5" id="table"># Tables</h3><table><thead> <tr> <th>Name</th><th>Age </th><th>Lang</th></tr></thead><tbody> <tr> <td>Deepankar </td><td>19</td><td>TypeScript </td></tr><tr> <td>Duma </td><td>4</td><td>Python </td></tr><tr> <td>Danillo </td><td>2</td><td>C++</td></tr></tbody></table><pre><code class="lang-html">&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+      &lt;th&gt;Age &lt;/th&gt;
+      &lt;th&gt;Lang&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Deepankar &lt;/td&gt;
+      &lt;td&gt;19&lt;/td&gt;
+      &lt;td&gt;TypeScript &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Duma &lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;Python &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Danillo &lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;C++&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+</div><div class="mt-1 mb-1"><h3 id="text"># Texts</h3><p>This is Paragraph with <span>Span Text</span> , <b>Bold Text</b> , <small>Small Text</small></p><pre><code class="lang-html">&lt;p&gt;This is Paragraph with 
+  &lt;span&gt;Span Text&lt;/span&gt; , 
+  &lt;b&gt;Bold Text&lt;/b&gt; ,
+  &lt;small&gt;Small Text&lt;/small&gt;
+&lt;/p&gt; 
+</code></pre>
+</div><div class="mt-1 mb-1"><h3 id="textarea"># TextArea</h3><p>Simple TextArea</p><textarea>This is a Textarea Element</textarea><p>Disabled TextArea</p><textarea class="disabled" disabled="disabled">This is a Disabled Textarea Element</textarea><pre><code class="lang-html">&lt;textarea&gt;This is a Textarea Element&lt;/textarea&gt;
+
+&lt;textarea class=&#39;disabled&#39;&gt;This is a Disabled Textarea Element&lt;/textarea&gt;
+</code></pre>
+</div>
