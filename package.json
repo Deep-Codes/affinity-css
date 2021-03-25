@@ -1,7 +1,7 @@
 {
   "name": "@deep-codes/affinity-css",
   "version": "v0.0.1-alpha",
-  "description": "Minimal CSS Framework based on Vercel's Design System",
+  "description": "🏖 Minimal CSS Framework based on Vercel's Design System",
   "main": "index.sass",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@Deep-Codes"
