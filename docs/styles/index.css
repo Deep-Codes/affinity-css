@@ -387,6 +387,14 @@ table td:nth-child(1) {
   border-left: 1px solid transparent;
 }
 
+table tr:not(:last-of-type) td {
+  border-bottom: 1px solid var(--accents2);
+}
+
+table tr:hover {
+  background: var(--accents1);
+}
+
 .m-0 {
   margin: 0rem;
 }
