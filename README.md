@@ -7,6 +7,8 @@
 
 Affinity-CSS is an Under Developing , very Opiniated CSS Library which uses most of the design principles and tokens from [Vercel's Design System](https://vercel.com/design) and Some of Utility Classes from [Tailwind CSS](https://tailwindcss.com/).
 
+Inspired from [Geist Style](https://style.geist-ui.dev/)
+
 ### Installation
 
 `npm i affinity-css`
