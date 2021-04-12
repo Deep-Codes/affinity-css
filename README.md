@@ -19,11 +19,16 @@ or
 
 via CDN
 
-https://cdn.jsdelivr.net/npm/affinity-css@latest/css/index.css
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/affinity-css@latest/css/index.css">
+```
 
 Minified:
 
-https://cdn.jsdelivr.net/npm/affinity-css@latest/css/index.min.css
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/affinity-css@latest/css/index.min.css">
+
+```
 
 Working on CI for Github Package and Npm
 (Help Needed) 😭
